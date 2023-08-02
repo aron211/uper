@@ -4,9 +4,9 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _535ecab3 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _db22f952 = () => interopDefault(import('..\\pages\\blank-page.vue' /* webpackChunkName: "pages/blank-page" */))
-const _2fb0fe7e = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
+const _247d78d6 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _29f399d8 = () => interopDefault(import('..\\pages\\blank-page.vue' /* webpackChunkName: "pages/blank-page" */))
+const _27599bb8 = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
 
 const emptyFn = () => {}
 
@@ -21,75 +21,75 @@ export const routerOptions = {
 
   routes: [{
     path: "/ar",
-    component: _535ecab3,
+    component: _247d78d6,
     name: "index___ar"
   }, {
     path: "/blank-page",
-    component: _db22f952,
+    component: _29f399d8,
     name: "blank-page___en"
   }, {
     path: "/contact",
-    component: _2fb0fe7e,
+    component: _27599bb8,
     name: "contact___en"
   }, {
     path: "/de",
-    component: _535ecab3,
+    component: _247d78d6,
     name: "index___de"
   }, {
     path: "/id",
-    component: _535ecab3,
+    component: _247d78d6,
     name: "index___id"
   }, {
     path: "/pt",
-    component: _535ecab3,
+    component: _247d78d6,
     name: "index___pt"
   }, {
     path: "/zh",
-    component: _535ecab3,
+    component: _247d78d6,
     name: "index___zh"
   }, {
     path: "/ar/blank-page",
-    component: _db22f952,
+    component: _29f399d8,
     name: "blank-page___ar"
   }, {
     path: "/ar/contact",
-    component: _2fb0fe7e,
+    component: _27599bb8,
     name: "contact___ar"
   }, {
     path: "/de/blank-page",
-    component: _db22f952,
+    component: _29f399d8,
     name: "blank-page___de"
   }, {
     path: "/de/contact",
-    component: _2fb0fe7e,
+    component: _27599bb8,
     name: "contact___de"
   }, {
     path: "/id/blank-page",
-    component: _db22f952,
+    component: _29f399d8,
     name: "blank-page___id"
   }, {
     path: "/id/contact",
-    component: _2fb0fe7e,
+    component: _27599bb8,
     name: "contact___id"
   }, {
     path: "/pt/blank-page",
-    component: _db22f952,
+    component: _29f399d8,
     name: "blank-page___pt"
   }, {
     path: "/pt/contact",
-    component: _2fb0fe7e,
+    component: _27599bb8,
     name: "contact___pt"
   }, {
     path: "/zh/blank-page",
-    component: _db22f952,
+    component: _29f399d8,
     name: "blank-page___zh"
   }, {
     path: "/zh/contact",
-    component: _2fb0fe7e,
+    component: _27599bb8,
     name: "contact___zh"
   }, {
     path: "/",
-    component: _535ecab3,
+    component: _247d78d6,
     name: "index___en"
   }],
 

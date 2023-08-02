@@ -28,12 +28,12 @@
           <facilities />
         </section> -->
  
-        <!-- <section
+        <section
           id="ask-doctors"
           :class="[isMobile ? 'space-top-short' : 'space-top']"
         >
           <ask-doctors />
-        </section> -->
+        </section> 
         <!-- <section
           id="testimonials"
           class="space-top-short"

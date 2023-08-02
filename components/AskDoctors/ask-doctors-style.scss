@@ -1,13 +1,13 @@
-.deco {
-  @include use-theme(background-color, $palette-primary-light, $palette-primary-dark);
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-  position: absolute;
-  @include left(-300px);
-  top: -100px;
-  opacity: 0.2;
-}
+// .deco {
+//   @include use-theme(background-color, $palette-primary-light, $palette-primary-dark);
+//   width: 1000px;
+//   height: 1000px;
+//   border-radius: 50%;
+//   position: absolute;
+//   // @include left(-300px);
+//   top: -100px;
+//   opacity: 0.2;
+// }
 
 .root {
   position: relative;
@@ -21,6 +21,10 @@
 }
 
 .side-filter {
+  text-align: center;
+  .subtitle{
+    font-size: 120%;
+  }
   .nav {
     background: none;
     & > * {
@@ -63,4 +67,5 @@
   button {
     width: 100%
   }
+  
 }

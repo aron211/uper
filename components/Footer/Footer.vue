@@ -126,7 +126,7 @@
       </v-col>
       <div class="main-wrap">
     <decoration />
-    <contact />
+    <!-- <contact /> -->
   </div>
     </v-row>
     <p class="body-2 text-center" v-if="isMobile">

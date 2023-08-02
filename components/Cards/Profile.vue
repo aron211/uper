@@ -1,28 +1,37 @@
 <template>
-  <v-card class="profile">
+  <div class="cards">
+    
+        <div class="container-icon">
+           <img :src="avatar" :alt="name" class="photo">
+         
+        </div>
+        
+      
+
+  <v-card class="profile" elevation="0">
+   
     <div class="person-block">
-      <v-avatar class="photo" width="80" height="80">
-        <img :src="avatar" :alt="name">
-      </v-avatar>
+     
       <div class="name-card">
-        <h4>{{ name }}</h4>
-        <p>{{ title }}</p>
+        <h4>{{ title }}</h4>
+        <p>{{ description }}</p>
       </div>
     </div>
-    <hr class="divider" />
+    <!-- <hr class="divider" /> -->
     <div class="action">
-      <div class="property">
+      <!-- <div class="property">
         <span>
           <i class="ion-thumbsup"></i>&nbsp; {{ rating }}%</span>
           <span><i class="ion-briefcase"></i>&nbsp; {{ exp }} Years</span>
-      </div>
-      <v-btn
+      </div> -->
+      <!-- <v-btn
         color="secondary"
         class="button">
         chat
-      </v-btn>
+      </v-btn> -->
     </div>
   </v-card>
+</div>
 </template>
 
 <style lang="scss" scoped>
@@ -36,22 +45,22 @@ export default {
       type: String,
       required: true
     },
-    name: {
-      type: String,
-      required: true
-    },
     title: {
       type: String,
       required: true
     },
-    rating: {
-      type: Number,
-      required: true
-    },
-    exp: {
-      type: Number,
+    description: {
+      type: String,
       required: true
     }
+    // rating: {
+    //   type: Number,
+    //   required: true
+    // },
+    // exp: {
+    //   type: Number,
+    //   required: true
+    // }
   }
 }
 </script>

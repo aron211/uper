@@ -1,6 +1,14 @@
 $frame-deco: '/images/decoration/frame-deco.png';
 
 /* Default Card */
+.cards{
+
+align-items: center;
+justify-content: center;
+text-align: center;
+
+}
+
 .default-card {
   direction: ltr;
   border-radius: 12px;
@@ -109,10 +117,10 @@ $frame-deco: '/images/decoration/frame-deco.png';
 }
 
 .name {
-  text-align: right;
+  text-align: center;
   @include margin-left($spacing2);
   h6 {
-    font-size: 16px;
+    font-size: 70px;
     font-weight: $font-bold;
   }
 }
@@ -121,6 +129,8 @@ $frame-deco: '/images/decoration/frame-deco.png';
 .profile {
   overflow: visible;
   margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  
   .divider {
     border-bottom: none;
     @include palette-divider;
@@ -131,13 +141,22 @@ $frame-deco: '/images/decoration/frame-deco.png';
 
 .person-block {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   .photo {
     width: 80px;
     height: 80px;
-    border-radius: 0 50% 50% 50%;
-    position: relative;
-    top: -8px;
-    @include left(-8px);
+    // border-radius: 0 50% 50% 50%;
+    // position: relative;
+    
+  }
+
+  .container-icon{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
   }
   .name-card {
     padding: $spacing1

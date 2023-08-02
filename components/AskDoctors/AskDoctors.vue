@@ -3,10 +3,19 @@
     <div class="root">
       <div class="deco"></div>
       <v-container :class="{ 'fixed-width': mdUp }">
-        <u-animate-container>
+        
           <v-row class="spacing6" justify="center">
             <v-col cols="12" sm="9" md="2" class="pa-0">
-              <u-animate
+              <div class="side-filter">
+                <h4 class="title-primary">
+                    SERVICIOS
+                   
+                  </h4>
+                  <p class="subtitle">
+                    De Inmigracion a Inversion
+                  </p>
+              </div>
+              <!-- <u-animate
                 :offset="-100"
                 name="fadeInLeftShort"
                 delay="0.2s"
@@ -14,7 +23,7 @@
               >
                 <div class="side-filter">
                   <h4 class="title-primary">
-                    {{ $t('medicalLanding.ask_doctors') }}
+                    SERVICES
                   </h4>
                   <v-list class="nav">
                     <v-list-item-group v-model="item" color="primary">
@@ -30,7 +39,7 @@
                     </v-list-item-group>
                   </v-list>
                 </div>
-              </u-animate>
+              </u-animate> -->
             </v-col>
             <v-col cols="12" lg="8" md="10" class="pa-6 py-0">
               <div class="massonry">
@@ -42,27 +51,27 @@
                     sm="6"
                     class="px-lg-8 px-3 py-3"
                   >
-                    <u-animate
+                    <!-- <u-animate
                       :delay="(0.2 * index) + 's'"
                       duration="0.4s"
                       name="fadeInUpShort"
-                    >
+                    > </u-animate> -->
                       <div>
                         <profile-card
-                          :avatar="item.avatar"
-                          :name="item.name"
+                        :avatar="item.avatar"
                           :title="item.title"
-                          :rating="item.rating"
-                          :exp="item.exp"
+                          :description="item.description"
+                         
+                          
                         />
                       </div>
-                    </u-animate>
+                    
                   </v-col>
                 </v-row>
               </div>
             </v-col>
           </v-row>
-        </u-animate-container>
+      
       </v-container>
     </div>
   </fragment>
@@ -74,8 +83,8 @@
 </style>
 
 <script>
-import imgAPI from '~/static/images/imgAPI'
 import ProfileCard from '../Cards/Profile'
+import logo from '../../static/images/urpe/logo.png'
 
 export default {
   components: {
@@ -87,55 +96,34 @@ export default {
       index: 0,
       loaded: false,
       item: 0,
-      categories: [
-        'all',
-        'Orthopedic',
-        'Nutritionist',
-        'Pediatric',
-        'Anaesthestic'
-      ],
+      logo,
+      // categories: [
+      //   'all',
+      //   'Orthopedic',
+      //   'Nutritionist',
+      //   'Pediatric',
+      //   'Anaesthestic'
+      // ],
       doctorsData: [
         {
-          avatar: imgAPI.medical[7],
-          name: 'Jena Doe',
-          title: 'Pediatric Surgeon',
-          rating: 95,
-          exp: 4
+          avatar: logo,
+          title: 'lorem insupm lore lore ',
+          description: 'tramites de inmigracion'
         },
         {
-          avatar: imgAPI.medical[12],
-          name: 'John Doe',
-          title: 'Pediatric Surgeon',
-          rating: 95,
-          exp: 4
+          avatar: logo,
+          title: 'lorem insupm lore lore ',
+          description: 'tramites de inmigracion'
         },
         {
-          avatar: imgAPI.medical[8],
-          name: 'Jihan Doe',
-          title: 'Pediatric Surgeon',
-          rating: 95,
-          exp: 4
+          avatar: logo,
+          title: 'lorem insupm lore lore ',
+          description: 'tramites de inmigracion'
         },
         {
-          avatar: imgAPI.medical[10],
-          name: 'James Doe',
-          title: 'Pediatric Surgeon',
-          rating: 95,
-          exp: 4
-        },
-        {
-          avatar: imgAPI.medical[11],
-          name: 'Jim Doe',
-          title: 'Pediatric Surgeon',
-          rating: 95,
-          exp: 4
-        },
-        {
-          avatar: imgAPI.medical[9],
-          name: 'Jessy Doe',
-          title: 'Pediatric Surgeon',
-          rating: 95,
-          exp: 4
+          avatar: logo,
+          title: 'lorem insupm lore lore ',
+          description: 'tramites de inmigracion'
         }
       ]
     }
