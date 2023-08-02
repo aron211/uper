@@ -1,5 +1,9 @@
 .root {
+  background-image: url('../../static/images/urpe/somos.jpg');
+  object-fit: cover;
+  max-width: none;
   blockquote {
+    max-width: none;
     margin: spacing(5, 4, 0);
     font-size: 20px;
     font-style: italic;
@@ -30,4 +34,32 @@
       margin-top: $spacing1 * -3;
     }
   }
+  .curved-right {
+    position:relative;
+    margin-top: 50vh;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; /* Color de fondo, puedes cambiarlo */
+    border-radius: 0 80px 0 0 !important; /* Aquí definimos los radios de las esquinas en orden: superior izquierda, superior derecha, inferior derecha, inferior izquierda. En este caso, solo redondeamos el borde derecho superior. */
+    border: 1px solid #ccc; /* Añadimos un borde de 1px y lo puedes cambiar según tus preferencias */
+    
+  }
+ 
+  .img2{
+   
+    height: 100vh; /* La altura se ajustará automáticamente para mantener la proporción */
+      width: 45vw;
+      top: 0;
+      right: 0 ;
+      opacity: 60%;
+      z-index: 0;
+      position: absolute;
+      object-fit: cover;
+      
+
+     
+     
+    
+  }
+  
 }
