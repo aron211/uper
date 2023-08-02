@@ -8,7 +8,8 @@
             <div :class="{ 'text-center': !isDesktop}">
               <div class="title-deco">
                 <div v-if="isDesktop" class="decoration"></div>
-                <title-deco :text="$t('medicalLanding.expertise_title')" />
+                <!-- <title-deco :text="$t('medicalLanding.expertise_title')" /> -->
+                <h1 class="experttitle">Expertos</h1>
               </div>
             </div>
             <u-animate-container>
@@ -55,12 +56,24 @@
             lg="6"
             md="7"
           >
-            <h4 class="title-default use-text-subtitle">
-              {{ $t('medicalLanding.expertise_subtitle') }}
+            <h4 class="title-default use-text-subtitle expertsubtitle">
+             Esperando tu llamado
             </h4>
-            <p class="desc use-text-paragraph">
+
+            <div class="tag-group">
+              <img
+                v-for="(item, index) in expertosArray"
+                :key="index"
+                :src="item"
+                alt="Experto Image"
+                class="tag-item"
+              />
+            </div>
+
+            <!-- <p class="desc use-text-paragraph">
               {{ $t('medicalLanding.expertise_paragraph') }}
-            </p>
+            </p> -->
+
             <hidden point="xsDown">
               <div class="running-tag" v-if="loaded">
                 <slick :options="slickOptions">
@@ -96,6 +109,12 @@
 import { KinesisContainer, KinesisElement } from 'vue-kinesis'
 import TitleDeco from '../Title/WithDecoration'
 import Hidden from '../Hidden'
+import imgAPI from '~/static/images/imgAPI'
+import Group1Image from '../../static/images/urpe/Group1.png'
+import Group2Image from '../../static/images/urpe/Group2.png'
+import Group3Image from '../../static/images/urpe/Group3.png'
+import Group4Image from '../../static/images/urpe/Group4.png'
+
 
 export default {
   components: {
@@ -118,19 +137,21 @@ export default {
         autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
+        imgAPI: imgAPI,
         vertical: true
       },
       expertiseList: [
-        ['Dentist', 'Padriatic', 'Cardiology'],
-        ['Othopaedi', 'Traumatologi', 'Anestesiologi'],
-        ['Reumatologi', 'Andrologi', 'Ortodonsia'],
-        ['Dentist', 'Padriatic', 'Cardiology'],
-        ['Othopaedi', 'Traumatologi', 'Anestesiologi'],
-        ['Reumatologi', 'Andrologi', 'Ortodonsia'],
-        ['Dentist', 'Padriatic', 'Cardiology'],
-        ['Othopaedi', 'Traumatologi', 'Anestesiologi'],
-        ['Reumatologi', 'Andrologi', 'Ortodonsia']
+  ['ruta-a-dentist.png', 'ruta-a-pediatric.png', 'ruta-a-cardiology.png'],
+  ['ruta-a-othopaedi.png', 'ruta-a-traumatologi.png', 'ruta-a-anestesiologi.png'],
+  // ... y así sucesivamente para las demás filas
+],
+expertosArray: [
+        Group1Image,
+        Group2Image,
+        Group3Image,
+        Group4Image
       ]
+
     }
   },
   mounted() {

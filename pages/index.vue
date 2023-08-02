@@ -13,41 +13,43 @@
         >
           <about />
         </section>
-        <dots-parallax />      
+        <!-- <dots-parallax />   -->
         <section
+          id="our-expertise"
+          :class="[isTablet ? 'space-top-short' : 'space-top']"
+          style="background-color: #252B42;"
+        >
+          <expertise />
+        </section>    
+        <!-- <section
           id="facility"
           class="space-top"
         >
           <facilities />
-        </section>
-        <section
-          id="our-expertise"
-          :class="[isTablet ? 'space-top-short' : 'space-top']"
-        >
-          <expertise />
-        </section>
-        <section
+        </section> -->
+ 
+        <!-- <section
           id="ask-doctors"
           :class="[isMobile ? 'space-top-short' : 'space-top']"
         >
           <ask-doctors />
-        </section>
-        <section
+        </section> -->
+        <!-- <section
           id="testimonials"
           class="space-top-short"
         >
           <testimonials />
-        </section>
-        <section class="space-top-short" id="call-to-action">
+        </section> -->
+        <!-- <section class="space-top-short" id="call-to-action">
           <call-action />
-        </section>
+        </section> -->
         <section class="space-top-short" id="clinics">
           <clinics />
         </section>
       </div>
-      <hidden point="mdDown">
+      <!-- <hidden point="mdDown">
         <page-nav />
-      </hidden>
+      </hidden> -->
       <main-footer />
       <hidden point="mdDown">
         <notification />

@@ -35,7 +35,7 @@
       <v-container class="fixed-width">
         <div class="title">
           <title-icon
-            :text="$t('medicalLanding.services_title')"
+            :text="Servicios"
             icon="library_add"
             extended
           />

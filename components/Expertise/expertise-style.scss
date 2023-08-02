@@ -113,8 +113,28 @@ $red-buble: '/images/medical/red_buble.png';
 }
 
 .tag-group {
+  // margin: 5px;
   display: block;
   &:focus {
     outline: none;
   }
 }
+.experttitle{
+  // margin-left: 2vw;
+  font-weight: 400;
+  font-family: 'Poppins',sans-serif !important;
+  font-size: calc(2em + 1.5vw);
+  color: rgb(255, 255, 255);
+}
+.expertsubtitle{
+  // margin-left: 2vw;
+  font-weight: 300;
+  font-family: 'Poppins',sans-serif !important;
+  font-size: calc(1.4em + 1.5vw);
+  color: rgb(255, 255, 255);
+}
+.tag-item{
+  width: 85vw;
+  height: 75vh;
+}
+

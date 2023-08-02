@@ -1,34 +1,24 @@
 <template>
   <v-container class="max-lg footer">
     <v-row class="spacing4">
-      <v-col
-        class="pa-4"
+       <!-- <v-col
+        class="pa-0"
         md="3"
         cols="12"
       >
         <div class="logo">
-          <img
-            :src="logo"
-            alt="logo"
-          >
-          <h6 class="title">
-            {{ brand.medical.projectName }}
-          </h6>
+          
+          <h1 class="title">
+           Contacto
+          </h1>
         </div>
-        <p class="footer-desc pb-2">
-          {{ $t('medicalLanding.footer_paragraph') }}
-        </p>
-        <p class="body-2" v-if="isDesktop">
-          &copy;&nbsp;
-          {{ brand.medical.footerText }}
-        </p>
-      </v-col>
-      <v-col
+      </v-col> -->
+     <!-- <v-col
         class="pa-6"
         md="6"
         cols="12"
-      >
-        <v-expansion-panels v-if="isMobile" class="accordion-root">
+      > -->
+        <!-- <v-expansion-panels v-if="isMobile" class="accordion-root">
           <v-expansion-panel
             v-for="(footer, index) in footers"
             :key="index"
@@ -52,8 +42,8 @@
               </ul>
             </v-expansion-panel-content>
           </v-expansion-panel>
-        </v-expansion-panels>
-        <v-row justify="space-around" v-if="isDesktop">
+        </v-expansion-panels> -->
+        <!-- <v-row justify="space-around" v-if="isDesktop">
           <v-col
             v-for="(footer, index) in footers"
             :key="index"
@@ -76,7 +66,9 @@
             </ul>
           </v-col>
         </v-row>
-      </v-col>
+      </v-col>  -->
+
+        
       <v-col
         md="3"
         cols="12"
@@ -84,35 +76,41 @@
       >
         <div class="socmed">
           <v-btn
+            style=" background-color: transparent !important;"
             text
             icon
+            variant="plain"
             class="button"
           >
             <span class="ion-logo-facebook icon" />
           </v-btn>
           <v-btn
+            style=" background-color: transparent !important;"
             text
             icon
+            variant="plain"
             class="button"
           >
             <span class="ion-logo-twitter  icon" />
           </v-btn>
-          <v-btn
+          <!-- <v-btn
             text
             icon
             class="button"
           >
             <span class="ion-logo-instagram icon" />
-          </v-btn>
+          </v-btn> -->
           <v-btn
+            style=" background-color: transparent !important;"
             text
             icon
+            variant="plain"
             class="button"
           >
             <span class="ion-logo-linkedin icon" />
           </v-btn>
         </div>
-        <v-select
+        <!-- <v-select
           :items="langList"
           :value="lang"
           v-model="lang"
@@ -121,8 +119,15 @@
           class="select-lang"
           prepend-inner-icon="mdi-web"
           @change="switchLang(lang)"
-        />
+        /> -->
+        <section class="space-top-short" id="contacts">
+          <Contact />
+        </section>
       </v-col>
+      <div class="main-wrap">
+    <decoration />
+    <contact />
+  </div>
     </v-row>
     <p class="body-2 text-center" v-if="isMobile">
       &copy;&nbsp;
@@ -138,8 +143,12 @@
 <script>
 import logo from '~/static/images/medical-logo.svg'
 import brand from '~/static/text/brand'
+import Contact from '~/components/Forms/Contact'
 
 export default {
+  components: {
+    Contact
+  },
   data: () => ({
     logo: logo,
     brand: brand,

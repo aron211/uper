@@ -34,6 +34,48 @@
       margin-top: $spacing1 * -3;
     }
   }
+  .title{
+    @include breakpoints-down(md) {
+      // background-color: yellow;
+      // margin-top: $spacing15;
+      white-space: nowrap;
+      display: block;
+      float: center;
+      // text-align: center !important;
+      // background-color: yellow;
+      width: 100%;
+
+
+      .titletext{
+        margin-left: 2vw;
+        font-weight: 600;
+        font-family: 'Poppins',sans-serif !important;
+        font-size: calc(1.2em + 1.3vw);
+      }
+  }
+}
+  .subtitle{
+    @include breakpoints-down(md) {
+      // background-color: yellow;
+      // margin-top: $spacing15;
+      font-family: 'Poppins',sans-serif !important;
+      font-weight: 400;
+      font-size: calc(0.8em + 0.8vw);
+      // line-height: 1;
+      // margin-top: 53vh;
+    }
+  }
+  .parrafo{
+    @include breakpoints-down(md) {
+      // background-color: yellow;
+      // margin-top: $spacing15;
+      font-family: 'Poppins',sans-serif !important;
+      font-weight: 100;
+      font-size: calc(0.7em + 0.7vw);
+      // line-height: 1;
+      // margin-top: 53vh;
+  }
+}
   .curved-right {
     position:relative;
     margin-top: 50vh;

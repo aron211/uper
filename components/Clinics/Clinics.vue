@@ -5,11 +5,17 @@
     </div>
     <v-container class="fixed-width">
       <v-row class="spacing6">
-        <v-col cols="12" lg="1" class="pa-6" v-if="isDesktop" />
-        <v-col cols="12" lg="5" md="6" class="pa-6">
-          <h4 class="title-primary mt-10">
-            {{ $t('medicalLanding.clinic_title') }}
+        <v-col cols="12" lg="1" class="pa-6 pt-0" v-if="isDesktop" />
+        <v-col cols="12" lg="5" md="6" class="pa-6 pt-0">
+          <h4 class="title-primary mt-10 titlecont">
+            <!-- {{ $t('medicalLanding.clinic_title') }} -->
+            Contacto
           </h4>
+          <h4 class="title-primary mt-10 subtitledisp">
+            <!-- {{ $t('medicalLanding.clinic_title') }} -->
+            Disponible <a href="" style="color: #2091F9; text-decoration: none;">24/7</a>
+          </h4>
+          
           <div class="block">
             <u-animate-container>
               <div v-for="(item, index) in clinicData" :key="index">
@@ -17,20 +23,19 @@
                   :offset="-50"
                   :delay="(index * 0.3) + 's'"
                   name="fadeInLeftShort"
-                  duration="0.3s"
+                  duration="0.5s"
                 >
                   <AddressCard
-                    :name="item.name"
+                    :address="item.address"
                     :phone="item.phone"
                     :email="item.email"
-                    :address="item.address"
                   />
                 </u-animate>
               </div>
             </u-animate-container>
           </div>
         </v-col>
-        <v-col cols="12" md="6" class="pa-6">
+        <!-- <v-col cols="12" md="6" class="pa-6">
           <v-card class="map">
             <GMap
               ref="gMap"
@@ -46,7 +51,7 @@
               />
             </GMap>
           </v-card>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </div>
@@ -61,38 +66,39 @@
 import ParallaxOval from '../Parallax/Oval'
 import AddressCard from '../Cards/Address'
 
+
 export default {
   components: {
     ParallaxOval,
-    AddressCard
+    AddressCard,
   },
   data() {
     return {
       clinicData: [
         {
           name: 'Central Clinic',
-          phone: '+123 456 78 91',
-          email: 'hello@luxi.com',
-          address: 'Lorem ipsum street no.14 Block A'
+          address: '3480 Preston Ridge Rd Suite 500, Alpharetta, GA 30005',
+          email: 'Example@example.com',
+          phone: '(843) 555-0130',
         },
-        {
-          name: 'Dental Clinic',
-          phone: '+123 456 78 91',
-          email: 'hello@luxi.com',
-          address: 'Lorem ipsum street Block C - Vestibullum Building'
-        },
-        {
-          name: 'Mother and Baby Care',
-          phone: '+123 456 78 91',
-          email: 'hello@luxi.com',
-          address: 'Lorem ipsum street no.14 Block A'
-        },
-        {
-          name: 'Orthopedic Clinic',
-          phone: '+123 456 78 91',
-          email: 'hello@luxi.com',
-          address: 'Lorem ipsum street Block C - Vestibullum Building'
-        }
+        // {
+        //   name: 'Dental Clinic',
+        //   phone: '+123 456 78 91',
+        //   email: 'hello@luxi.com',
+        //   address: 'Lorem ipsum street Block C - Vestibullum Building'
+        // },
+        // {
+        //   name: 'Mother and Baby Care',
+        //   phone: '+123 456 78 91',
+        //   email: 'hello@luxi.com',
+        //   address: 'Lorem ipsum street no.14 Block A'
+        // },
+        // {
+        //   name: 'Orthopedic Clinic',
+        //   phone: '+123 456 78 91',
+        //   email: 'hello@luxi.com',
+        //   address: 'Lorem ipsum street Block C - Vestibullum Building'
+        // }
       ],
       currentLocation: {},
       locations: [

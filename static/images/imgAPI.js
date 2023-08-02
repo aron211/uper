@@ -48,10 +48,18 @@ const imgAPI = {
     '/images/urpe/homeMovil.png',
     '/images/urpe/logo.png',
     '/images/urpe/Menu.png',
+
     // '/images/avatars/pp_boy3.svg',
     // '/images/avatars/pp_boy4.svg',
     // '/images/avatars/pp_boy5.svg',
     // 'https://via.placeholder.com/964x723/1071ef/FFFFFF'
+  ],
+  expertos: [
+    '/images/urpe/Group1.png',
+    '/images/urpe/Group2.png',
+    '/images/urpe/Group3.png',
+    '/images/urpe/Group4.png',
+
   ]
 }
 

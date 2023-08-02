@@ -18,13 +18,13 @@
         <v-icon>mdi-close</v-icon>
       </v-btn>
     </v-snackbar>
-    <hidden point="mdUp">
+    <!-- <hidden point="mdUp">
       <div class="logo logo-header">
         <nuxt-link :to="routeLink.medical.home">
           <img :src="logo" alt="logo">
         </nuxt-link>
       </div>
-    </hidden>
+    </hidden> -->
     <hidden point="smDown">
       <v-btn
         :href="routeLink.medical.home"
@@ -37,10 +37,12 @@
     </hidden>
     <v-container class="max-md">
       <h3 class="use-text-title pb-3 text-center">
-        {{ $t('common.contact_title') }}
+        <!-- {{ $t('common.contact_title') }} -->
+        
       </h3>
       <p class="desc use-text-subtitle2 text-center">
-        {{ $t('common.contact_subtitle') }}
+        <!-- {{ $t('common.contact_subtitle') }} -->
+        Escribenos un Mensaje
       </p>
       <div class="form">
         <v-form
@@ -48,7 +50,7 @@
           v-model="valid"
         >
           <v-row class="spacing6">
-            <v-col cols="12" sm="6" class="pa-6">
+            <!-- <v-col cols="12" sm="6" class="pa-6">
               <v-text-field
                 v-model="name"
                 :rules="nameRules"
@@ -65,18 +67,18 @@
                 class="input"
                 required
               />
-            </v-col>
+            </v-col> -->
             <v-col cols="12" sm="6" class="pa-6">
               <v-text-field
                 v-model="phone"
-                :label="$t('common.form_phone')"
+                label="Nombre"
                 class="input"
               />
             </v-col>
             <v-col cols="12" sm="6" class="pa-6">
               <v-text-field
                 v-model="company"
-                :label="$t('common.form_company')"
+                label="Email"
                 class="input"
               />
             </v-col>
@@ -85,12 +87,12 @@
                 v-model="message"
                 rows="6"
                 class="input"
-                :label="$t('common.form_message')"
+                label="Tu Mensaje"
               />
             </v-col>
           </v-row>
           <div class="btn-area">
-            <div class="form-control-label">
+            <!-- <div class="form-control-label">
               <v-checkbox
                 v-model="checkbox"
                 color="primary"
@@ -101,13 +103,14 @@
               <a href="#">
                 {{ $t('common.form_privacy') }}
               </a>
-            </div>
+            </div> -->
             <v-btn
               color="primary"
               @click="validate"
               large
             >
-              {{ $t('common.form_send') }}
+              <!-- {{ $t('common.form_send') }} -->
+              Enviar
               <v-icon class="right-icon">
                 mdi-send
               </v-icon>

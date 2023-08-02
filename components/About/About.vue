@@ -14,12 +14,19 @@
             
         <v-card-text>
           <!-- Aquí coloca tu texto u otros elementos dentro de la card -->
-          <title-deco text="Quienes somos?" :bg="photo"/>
-          <p class="title-default use-text-subtitle">
+          <!-- <title-deco class="title use-text-subtitle" text="Quienes somos?" :bg="photo"/> -->
+          <title class="title">
+            <h3 class="titletext">
+              Quienes somos?
+            </h3>
+          </title>
+          <br>
+          <!-- <span class="title">Quienes somos?</span> -->
+          <p class="title-default subtitle">
             <a class="text">"Urpe Integral Services</a> es como tu amigo confiable que te guía a través de los trámites"
           </p>
         
-          <p class="title-default use-text-subtitle">
+          <p class="title-default use-text-subtitle parrafo">
           "Desde inmigración, impuestos, reparación de crédito y bienes raíces en los Estados Unidos.
             Nos adaptamos a tus necesidades, ofreciéndote consejos y soluciones personalizadas para ayudarte a alcanzar tu estabilidad.
             En Urpe, estamos a tu lado en cada paso del camino, haciendo tu vida más fácil y próspera en tu nuevo hogar."
