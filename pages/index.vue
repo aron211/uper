@@ -4,7 +4,7 @@
       <main-header />
       <div class="container-wrap">
         <oval-top />
-        <section id="home">
+        <section style="margin-left: 0;" id="home">
           <video-banner />
         </section>
         <section
@@ -15,7 +15,13 @@
         </section>
         <!-- <dots-parallax />   -->
         <section
-          id="our-expertise"
+          id="ask-doctors"
+          :class="[isMobile ? 'space-top-short' : 'space-top']"
+        >
+          <ask-doctors />
+        </section> 
+        <section
+          id="facility"
           :class="[isTablet ? 'space-top-short' : 'space-top']"
           style="background-color: #252B42;"
         >
@@ -28,12 +34,7 @@
           <facilities />
         </section> -->
  
-        <section
-          id="ask-doctors"
-          :class="[isMobile ? 'space-top-short' : 'space-top']"
-        >
-          <ask-doctors />
-        </section> 
+
         <!-- <section
           id="testimonials"
           class="space-top-short"

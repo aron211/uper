@@ -19,18 +19,17 @@ $red-buble: '/images/medical/red_buble.png';
   width: 560px;
   height: 560px;
   top: $spacing10 * 11;
-  @include left(20%);
+    @include left(20%);
   position: absolute;
-  transform: scale(3);
 }
 
 .decoration {
-  width: 600px;
-  height: 600px;
-  top: -150px;
-  right: -150px;
+  width: 300px;
+  height: 300px;
+  top: 10vh;
+  right: -50px;
   border-radius: 50%;
-  border: 1px solid;
+  border: 2px solid;
   @include use-theme(border-color, $palette-primary-light, $palette-primary-dark);
   position: absolute;
 }
@@ -119,6 +118,12 @@ $red-buble: '/images/medical/red_buble.png';
     outline: none;
   }
 }
+
+.mobilecard{
+  @include breakpoints-up(md) {
+    display: none
+  }
+}
 .experttitle{
   // margin-left: 2vw;
   font-weight: 400;
@@ -136,5 +141,32 @@ $red-buble: '/images/medical/red_buble.png';
 .tag-item{
   width: 85vw;
   height: 75vh;
+}
+.webcarrousel{
+  @include breakpoints-down(md) {
+    display: none;
+  }
+}
+.tag-groupweb {
+  display: flex;
+  justify-content: flex-start; // Para alinear los elementos desde la izquierda
+  align-items: center; 
+}
+.tag-itemweb{
+  width: 45vw;
+  height: 35vh;
+  width: auto; // Deja que los elementos tengan un ancho flexible
+  height: auto; // Deja que los elementos tengan un alto flexible
+  margin: 0 $spacing1; // Ajusta los márgenes entre los elementos
+}
+.expertsubtitleweb{
+  @include breakpoints-down(md) {
+    display: none;
+  }
+  // margin-left: 2vw;
+  font-weight: 300;
+  font-family: 'Poppins',sans-serif !important;
+  font-size: calc(1em + 1.5vw);
+  color: rgb(255, 255, 255);
 }
 

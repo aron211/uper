@@ -72,7 +72,7 @@
             class="nav-menu"
           >
 
-            <!-- <div v-if="isDesktop">
+            <div v-if="isDesktop">
               <scrollactive
                 v-if="loaded"
                 :offset="navOffset"
@@ -100,18 +100,18 @@
                     {{ $t('medicalLanding.header_'+item.name) }}
                   </v-btn>
                 </li>
-                <li>
+                <!-- <li>
                   <v-btn
                     :href="link.medical.contact"
                     text
                   >
                     {{ $t('medicalLanding.header_contact') }}
                   </v-btn>
-                </li>
+                </li> -->
               </scrollactive>
             </div>
 
-            <setting-menu :invert="invert" /> -->
+            <!-- <setting-menu :invert="invert" /> -->
             <v-btn
                 v-if="isMobile"
                 :class="{ 'is-active': openDrawer }"

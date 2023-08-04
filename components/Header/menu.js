@@ -1,3 +1,3 @@
-const menu = ['about', 'facility', 'ask-doctors', 'clinics']
+const menu = ['about', 'ask-doctors', 'facility', 'clinics']
 
 export default menu

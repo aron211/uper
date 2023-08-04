@@ -32,8 +32,8 @@ export default () => {
       },
       medicalLanding: {
         "header_about": "Quienes somos?",
-        "header_facility": "Servicios",
-        "header_ask-doctors": "Expertos",
+        "header_facility": "Expertos",
+        "header_ask-doctors": "Servicios",
         "header_clinics": "Contactos",
         "header_contact": "contact",
         "header_language": "language",

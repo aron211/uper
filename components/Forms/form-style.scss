@@ -14,6 +14,9 @@
     @include breakpoints-down(md) {
       font-size: 36px
     }
+    // @include breakpoints-up(md) {
+    //   display: none;
+    // }
   }
 }
 
@@ -202,5 +205,41 @@
 .notification {
   .v-btn--round .v-btn__content .v-icon {
     color: #FFF
+  }
+}
+
+.containermovil{
+  @include breakpoints-up(md) {
+display: none;
+  }
+}
+.containeweb{
+  .formulario {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .campo-input {
+    width: 100%;
+    background-color: rgb(130, 127, 127);
+    margin-bottom: 15px;
+  }
+  
+  .boton {
+    align-self: flex-start;
+  }
+  .campo-input{
+    height: 10vh !important;
   }
 }

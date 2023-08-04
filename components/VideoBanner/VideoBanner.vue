@@ -21,10 +21,12 @@
             <div class="menu-bg"></div>
             <div class="video-bg"></div>
           </div>
+          <img class="juntadir" :src="juntasdir" alt="">
           <div class="video-wrap">
             <div class="video-figure">
               <div class="inner-figure">
-                <hidden point="mdDown">
+                <!-- <img class="juntadir" :src="juntasdir" alt=""> -->
+                <!-- <hidden point="mdDown">
                   <v-btn
                     v-if="play"
                     fab
@@ -35,13 +37,13 @@
                     <v-icon v-if="playCtrl">mdi-pause</v-icon>
                     <v-icon v-else>mdi-play</v-icon>
                   </v-btn>
-                </hidden>
-                <img
+                </hidden> -->
+                <!-- <img
                   v-if="!play || isMobile"
                   :src="cover"
-                  alt="cover"
-                >
-                <div
+                  alt="cover" 
+                >-->
+                <!-- <div
                   v-if="yt.use"
                   class="video"
                 >
@@ -55,7 +57,7 @@
                     @playing="playing"
                     @ended="ended"
                   />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -111,6 +113,8 @@
 <script>
 import imgAPI from '~/static/images/imgAPI'
 import DotsParallax from '../Parallax/Dots'
+import juntasdir from '../../static/images/urpe/juntasdir.jpg'
+
 import youtube from '~/youtube'
 import Hidden from '../Hidden'
 
@@ -133,7 +137,8 @@ export default {
       yt: youtube,
       play: false,
       playCtrl: true,
-      cover: imgAPI.urpe[0]
+      cover: imgAPI.urpe[0],
+      juntasdir
     }
   },
   methods: {

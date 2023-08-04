@@ -10,51 +10,17 @@
                 <div v-if="isDesktop" class="decoration"></div>
                 <!-- <title-deco :text="$t('medicalLanding.expertise_title')" /> -->
                 <h1 class="experttitle">Expertos</h1>
+                <h4 class="title-default use-text-subtitle expertsubtitleweb">
+                   Esperando tu llamado
+                </h4>
               </div>
             </div>
-            <u-animate-container>
-              <u-animate
-                :offset="-100"
-                name="zoomInShort"
-                delay="0.1s"
-                duration="0.3s"
-                class="parallax-wrap"
-              >
-                <div class="parallax-wrap" v-if="loaded">
-                  <kinesis-container
-                     :duration="1500"
-                     easing="cubic-bezier(0.23, 1, 0.32, 1)"
-                  >
-                    <kinesis-element
-                      :strength="15"
-                      type="translate"
-                      tag="div"
-                    >
-                      <span class="icon-green" />
-                    </kinesis-element>
-                    <kinesis-element
-                      :strength="10"
-                      type="translate"
-                      tag="div"
-                    >
-                      <span class="icon-red" />
-                    </kinesis-element>
-                    <kinesis-element
-                      :strength="30"
-                      type="translate"
-                      tag="div"
-                    >
-                      <span class="icon-blue" />
-                    </kinesis-element>
-                  </kinesis-container>
-                </div>
-              </u-animate>
-            </u-animate-container>
           </v-col>
           <v-col
             cols="12"     
             lg="6"
             md="7"
+            class="mobilecard"
           >
             <h4 class="title-default use-text-subtitle expertsubtitle">
              Esperando tu llamado
@@ -69,30 +35,28 @@
                 class="tag-item"
               />
             </div>
-
-            <!-- <p class="desc use-text-paragraph">
-              {{ $t('medicalLanding.expertise_paragraph') }}
-            </p> -->
-
-            <hidden point="xsDown">
-              <div class="running-tag" v-if="loaded">
-                <slick :options="slickOptions">
-                  <div
-                    v-for="(group, indexGroup) in expertiseList"
-                    :key="indexGroup"
-                    class="tag-group"
-                  >
-                    <span
-                      v-for="(item, indexChild) in group"
-                      :key="indexChild"
-                      class="tag-item"
-                    >
-                      {{ item }}
-                    </span>
-                  </div>
-                </slick>
+          </v-col>
+          <v-col
+            cols="12"     
+            lg="6"
+            md="7"
+            class="webcarrousel"
+          >
+            <div class="tag-groupweb">
+            <slick :options="slickOptions">
+              <div
+                v-for="(item, index) in expertosArray"
+                :key="index"
+                class="tag-itemweb"
+              >
+                <img
+                  :src="item"
+                  alt="Experto Image"
+                />
               </div>
-            </hidden>
+              
+            </slick>
+          </div>
           </v-col>
         </v-row>
       </v-container>
@@ -140,11 +104,7 @@ export default {
         imgAPI: imgAPI,
         vertical: true
       },
-      expertiseList: [
-  ['ruta-a-dentist.png', 'ruta-a-pediatric.png', 'ruta-a-cardiology.png'],
-  ['ruta-a-othopaedi.png', 'ruta-a-traumatologi.png', 'ruta-a-anestesiologi.png'],
-  // ... y así sucesivamente para las demás filas
-],
+
 expertosArray: [
         Group1Image,
         Group2Image,

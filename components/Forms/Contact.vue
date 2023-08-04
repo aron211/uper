@@ -10,13 +10,13 @@
       <div class="action">
         Message Sent
       </div>
-      <v-btn
+      <!-- <v-btn
         text
         icon
         @click="snackbar = false"
       >
         <v-icon>mdi-close</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-snackbar>
     <!-- <hidden point="mdUp">
       <div class="logo logo-header">
@@ -25,7 +25,7 @@
         </nuxt-link>
       </div>
     </hidden> -->
-    <hidden point="smDown">
+    <!-- <hidden point="smDown">
       <v-btn
         :href="routeLink.medical.home"
         icon
@@ -34,90 +34,37 @@
         <i class="ion-ios-home-outline" />
         <i class="ion-ios-arrow-round-back-outline" />
       </v-btn>
-    </hidden>
-    <v-container class="max-md">
-      <h3 class="use-text-title pb-3 text-center">
-        <!-- {{ $t('common.contact_title') }} -->
-        
-      </h3>
-      <p class="desc use-text-subtitle2 text-center">
-        <!-- {{ $t('common.contact_subtitle') }} -->
-        Escribenos un Mensaje
-      </p>
-      <div class="form">
-        <v-form
-          ref="form"
-          v-model="valid"
-        >
-          <v-row class="spacing6">
-            <!-- <v-col cols="12" sm="6" class="pa-6">
-              <v-text-field
-                v-model="name"
-                :rules="nameRules"
-                :label="$t('common.form_name')"
-                class="input"
-                required
-              />
-            </v-col>
-            <v-col cols="12" sm="6" class="pa-6">
-              <v-text-field
-                v-model="email"
-                :rules="emailRules"
-                :label="$t('common.form_email')"
-                class="input"
-                required
-              />
-            </v-col> -->
-            <v-col cols="12" sm="6" class="pa-6">
-              <v-text-field
-                v-model="phone"
-                label="Nombre"
-                class="input"
-              />
-            </v-col>
-            <v-col cols="12" sm="6" class="pa-6">
-              <v-text-field
-                v-model="company"
-                label="Email"
-                class="input"
-              />
-            </v-col>
-            <v-col cols="12" class="pa-6">
-              <v-textarea
-                v-model="message"
-                rows="6"
-                class="input"
-                label="Tu Mensaje"
-              />
-            </v-col>
-          </v-row>
-          <div class="btn-area">
-            <!-- <div class="form-control-label">
-              <v-checkbox
-                v-model="checkbox"
-                color="primary"
-                :rules="[v => !!v || 'You must agree to continue!']"
-                :label="$t('common.form_terms')"
-                required
-              />
-              <a href="#">
-                {{ $t('common.form_privacy') }}
-              </a>
-            </div> -->
-            <v-btn
-              color="primary"
-              @click="validate"
-              large
-            >
-              <!-- {{ $t('common.form_send') }} -->
-              Enviar
-              <v-icon class="right-icon">
-                mdi-send
-              </v-icon>
-            </v-btn>
-          </div>
-        </v-form>
-      </div>
+    </hidden> -->
+   
+    <v-container class="max-md containerweb">
+      <div class="formulario">
+    <v-container class="contenedor">
+      <h2 class="titulo">Envianos un Mensaje
+      </h2>
+      <v-text-field
+        v-model="textoInput"
+        label="Tu Nombre"
+        outlined
+        rounded
+        class="campo-input"
+      ></v-text-field>
+      <v-text-field
+        v-model="textoInput"
+        label="Tu Email"
+        outlined
+        rounded
+        class="campo-input"
+      ></v-text-field>
+      <v-text-field
+        v-model="textoInput"
+        label="Tu mensaje"
+        outlined
+        rounded
+        class="campo-input"
+      ></v-text-field>
+      <v-btn color="primary" class="boton" @click="enviar">Enviar</v-btn>
+    </v-container>
+  </div>
     </v-container>
   </div>
 </template>
@@ -148,8 +95,8 @@ export default {
         v => !!v || 'E-mail is required',
         v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
       ],
-      phone: '',
-      company: '',
+      phone: 'Nombre',
+      company: 'Correo',
       message: '',
       checkbox: false,
       logo: logo,
