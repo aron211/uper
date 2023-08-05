@@ -44,9 +44,9 @@
         <!-- <section class="space-top-short" id="call-to-action">
           <call-action />
         </section> -->
-        <section class="space-top-short" id="clinics">
+        <!-- <section class="space-top-short" id="clinics">
           <clinics />
-        </section>
+        </section> -->
       </div>
       <!-- <hidden point="mdDown">
         <page-nav />
@@ -106,34 +106,34 @@
 import Header from '~/components/Header'
 import VideoBanner from '~/components/VideoBanner'
 import About from '~/components/About'
-import Facilities from '~/components/Facilities'
+// import Facilities from '~/components/Facilities'
 import Expertise from '~/components/Expertise'
-import Testimonials from '~/components/Testimonials'
+// import Testimonials from '~/components/Testimonials'
 import AskDoctors from '~/components/AskDoctors'
-import CallAction from '~/components/CallAction'
-import Clinics from '~/components/Clinics'
+// import CallAction from '~/components/CallAction'
+// import Clinics from '~/components/Clinics'
 import Footer from '~/components/Footer'
 import Hidden from '~/components/Hidden'
-import PageNav from '~/components/PageNav'
+// import PageNav from '~/components/PageNav'
 import Notification from '~/components/Notification'
-import DotsParallax from '~/components/Parallax/Dots'
+// import DotsParallax from '~/components/Parallax/Dots'
 import OvalTop from '~/components/Parallax/OvalTop'
 import brand from '~/static/text/brand'
 
 export default {
   components: {
     'main-header': Header,
-    DotsParallax,
+    // DotsParallax,
     OvalTop,
     VideoBanner,
     About,
-    Facilities,
+    // Facilities,
     Expertise,
-    Testimonials,
+    // Testimonials,
     AskDoctors,
-    CallAction,
-    Clinics,
-    PageNav,
+    // CallAction,
+    // Clinics,
+    // PageNav,
     Hidden,
     Notification,
     'main-footer': Footer

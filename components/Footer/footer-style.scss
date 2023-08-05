@@ -80,7 +80,7 @@
 .socmed {
   display: flex;
   justify-content: center;
-  margin-bottom: $spacing4;
+   margin-bottom: $spacing4;
   button {
     margin: $spacing1;
     .theme--dark & {
@@ -170,4 +170,36 @@
 }
 .accordion-icon {
   padding: 0
+}
+
+.block {
+  > section > * {
+    @media only screen and (min-width: 600px) and (max-width: 959px){
+      padding: spacing(4, 2);
+      display: inline-block;
+      width: 49%
+    }
+  }
+}
+.subtitledisp{
+  color: 
+  #252B42;
+  font-weight: 300;
+  font-family: 'Poppins',sans-serif !important;
+  font-size: calc(1em + 1vw) !important;
+  // color: yellow;
+}
+
+.titlecont{
+  font-weight: 600;
+  font-family: 'Poppins',sans-serif !important;
+  font-size: calc(2em + 2vw) !important;
+  color: 
+  #252B42;
+  // color: yellow;
+  // padding-top: -5%;
+}
+
+.fixed-width{
+  text-align: center;
 }

@@ -16,7 +16,7 @@
             Disponible <a href="" style="color: #2091F9; text-decoration: none;">24/7</a>
           </h4>
           
-          <div class="block">
+          <!-- <div class="block">
             <u-animate-container>
               <div v-for="(item, index) in clinicData" :key="index">
                 <u-animate
@@ -33,7 +33,7 @@
                 </u-animate>
               </div>
             </u-animate-container>
-          </div>
+          </div> -->
         </v-col>
         <!-- <v-col cols="12" md="6" class="pa-6">
           <v-card class="map">
@@ -64,13 +64,13 @@
 
 <script>
 import ParallaxOval from '../Parallax/Oval'
-import AddressCard from '../Cards/Address'
-
-
+// import AddressCard from '../Cards/Address'
+// import Footer from '../Footer/Footer.vue'
 export default {
   components: {
-    ParallaxOval,
-    AddressCard,
+    ParallaxOval
+    // AddressCard
+    // Footer
   },
   data() {
     return {
@@ -79,8 +79,8 @@ export default {
           name: 'Central Clinic',
           address: '3480 Preston Ridge Rd Suite 500, Alpharetta, GA 30005',
           email: 'Example@example.com',
-          phone: '(843) 555-0130',
-        },
+          phone: '+1 800-643-6740'
+        }
         // {
         //   name: 'Dental Clinic',
         //   phone: '+123 456 78 91',
