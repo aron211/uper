@@ -191,7 +191,7 @@ export default {
         name: 'Central Clinic',
         address: '3480 Preston Ridge Rd Suite 500, Alpharetta, GA 30005',
         email: 'Example@example.com',
-        phone: '800-643-6740'
+        phone: '+1 800-643-6740'
       }
     ],
     footers: [
