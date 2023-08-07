@@ -136,22 +136,22 @@
         
         <section class="space-top-short" id="contacts">
           <div class="block">
-            <u-animate-container>
+            <!-- <u-animate-container> -->
               <div v-for="(item, index) in clinicData" :key="index">
-                <u-animate
+                <AddressCard
+                  :address="item.address"
+                  :phone="item.phone"
+                  :email="item.email"
+                />
+                <!-- <u-animate
                   :offset="-50"
                   :delay="(index * 0.3) + 's'"
                   name="fadeInLeftShort"
                   duration="0.5s"
                 >
-                  <AddressCard
-                    :address="item.address"
-                    :phone="item.phone"
-                    :email="item.email"
-                  />
-                </u-animate>
+                </u-animate> -->
               </div>
-            </u-animate-container>
+            <!-- </u-animate-container> -->
           </div>
           <Contact />
         </section>
@@ -188,7 +188,7 @@ export default {
     lang: 'en',
     clinicData: [
       {
-        name: 'Central Clinic',
+        // name: 'Central Clinic',
         address: '3480 Preston Ridge Rd Suite 500, Alpharetta, GA 30005',
         email: 'Example@example.com',
         phone: '+1 800-643-6740'
