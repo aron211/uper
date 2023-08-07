@@ -1,11 +1,11 @@
 const brand = {
   medical: {
-    name: 'URPE',
-    desc: 'urpe - Vue Single Landing Page Template',
-    prefix: 'urpe',
-    footerText: 'URPE - All Rights Reserved 2021',
-    logoText: 'urpe page',
-    projectName: 'Urpe Page',
+    name: 'UPER',
+    desc: 'uper - Vue Single Landing Page Template',
+    prefix: 'uper',
+    footerText: 'UPER - All Rights Reserved 2021',
+    logoText: 'uper page',
+    projectName: 'Uper Page',
     // url: 'veluxi.ux-maestro.com/medical',
     img: '/static/images/uper/logo.png',
     notifMsg:
