@@ -33,6 +33,7 @@
                 :src="item"
                 alt="Experto Image"
                 class="tag-item"
+                @click="realizarLlamada"
               />
             </div>
           </v-col>
@@ -49,6 +50,7 @@
                 :key="index"
                 class="tag-itemweb"
               >
+              
                 <img
                   :src="item"
                   alt="Experto Image"
@@ -110,8 +112,14 @@ expertosArray: [
         Group2Image,
         Group3Image,
         Group4Image
-      ]
+      ],
+      nroTlf: '+1 800-643-6740',
 
+    }
+  },
+  methods: {
+    realizarLlamada() {
+      window.location.href = 'tel:' + this.nroTlf;
     }
   },
   mounted() {
@@ -122,6 +130,7 @@ expertosArray: [
       const lgUp = this.$store.state.breakpoints.lgUp
       return lgUp.indexOf(this.$mq) > -1
     }
-  }
+  },
+
 }
 </script>
