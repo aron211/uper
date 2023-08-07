@@ -74,6 +74,7 @@
 
 .text-helper {
   display: inline-block;
+  margin-top: 0.3em;
   @include breakpoints-up(lg) {
     @include padding-right($spacing10);
   }
@@ -93,7 +94,7 @@
 
   }
   @include breakpoints-down(md){
-    margin-top: 5vh;
+    margin-top: 5.5vh;
     font-family: 'Poppins',sans-serif !important;
     margin-bottom: $spacing1;
     font-size: calc(0.8em + 0.9vw);

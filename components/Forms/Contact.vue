@@ -36,7 +36,9 @@
       </v-btn>
     </hidden> -->
    
-    <v-container class="max-md containerweb">
+    <!-- <v-card variant="tonal" tile="Envianos Un Mensaje">
+
+      <v-container class="max-md containerweb">
       <div class="formulario">
     <v-container class="contenedor">
       <h2 class="titulo">Envianos un Mensaje
@@ -66,6 +68,68 @@
     </v-container>
   </div>
     </v-container>
+    </v-card > -->
+
+    
+    <v-card class="mx-auto px-6 py-8 cardtext"  max-width="400" >
+      
+        <v-card-title class="title-card">Envianos un Mensaje</v-card-title>
+   
+        <v-form
+        class="formcontact"
+        @submit.prevent="onSubmit"
+      >
+      
+        <v-text-field
+        
+        variant="solo-filled"
+        label="Tu Nombre"
+        outlined
+        rounded
+        background-color="#E7E7E7"
+        class="campo-input  inputs"
+      ></v-text-field>
+      <v-text-field
+
+        label="Tu Email"
+        outlined
+        rounded
+        variant="solo-filled"
+        class="campo-input"
+        background-color="#E7E7E7"
+      ></v-text-field>
+      
+      <v-textarea  
+
+        label="Tu mensaje"
+        outlined
+        rounded
+        variant="solo-filled"
+        class="campo-input" 
+        background-color="#E7E7E7"
+        >
+      </v-textarea>
+      <br>
+        <v-btn
+         
+        
+          color="primary"
+          size="large"
+          type="submit"
+          variant="elevated"
+           class="boton" 
+         
+        >
+         Enviar
+        </v-btn>
+        <br>
+      </v-form>
+    </v-card>
+
+
+ 
+    <br>
+    
   </div>
 </template>
 
@@ -78,11 +142,11 @@
 import logo from '~/static/images/medical-logo.svg'
 import brand from '~/static/text/brand'
 import link from '~/static/text/link'
-import Hidden from '../Hidden'
+// import Hidden from '../Hidden'
 
 export default {
   components: {
-    Hidden
+    // Hidden
   },
   data() {
     return {

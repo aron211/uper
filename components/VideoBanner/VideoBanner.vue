@@ -99,7 +99,7 @@
               </div>
             </v-card> -->
             <div class="consultas">
-              <v-btn class="btnconsultas" rounded="xl" style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
+              <v-btn class="btnconsultas" style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
             </div>
           </div>
         </v-col>

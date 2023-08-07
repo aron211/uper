@@ -1,3 +1,4 @@
+// eslint-disable-next-line vue/multi-word-component-names
 <template>
   <v-container class="max-lg footer">
     <v-row class="spacing4">
@@ -67,7 +68,19 @@
           </v-col>
         </v-row>
       </v-col>  -->
-
+      <v-container class="fixed-width">
+        <v-col cols="12" lg="5" md="6" class="pa-6 pt-0">
+          <h4 class="title-primary mt-10 titlecont">
+            <!-- {{ $t('medicalLanding.clinic_title') }} -->
+            Contacto
+          </h4>
+          <h4 class="title-primary mt-10 subtitledisp">
+            <!-- {{ $t('medicalLanding.clinic_title') }} -->
+            Disponible <a href="" style="color: #2091F9; text-decoration: none;">24/7</a>
+          </h4>
+        </v-col>
+      </v-container>
+     
         
       <v-col
         md="3"
@@ -100,7 +113,7 @@
           >
             <span class="ion-logo-instagram icon" />
           </v-btn> -->
-          <v-btn
+          <!-- <v-btn
             style=" background-color: transparent !important;"
             text
             icon
@@ -108,7 +121,7 @@
             class="button"
           >
             <span class="ion-logo-linkedin icon" />
-          </v-btn>
+          </v-btn> -->
         </div>
         <!-- <v-select
           :items="langList"
@@ -120,7 +133,26 @@
           prepend-inner-icon="mdi-web"
           @change="switchLang(lang)"
         /> -->
+        
         <section class="space-top-short" id="contacts">
+          <div class="block">
+            <u-animate-container>
+              <div v-for="(item, index) in clinicData" :key="index">
+                <u-animate
+                  :offset="-50"
+                  :delay="(index * 0.3) + 's'"
+                  name="fadeInLeftShort"
+                  duration="0.5s"
+                >
+                  <AddressCard
+                    :address="item.address"
+                    :phone="item.phone"
+                    :email="item.email"
+                  />
+                </u-animate>
+              </div>
+            </u-animate-container>
+          </div>
           <Contact />
         </section>
       </v-col>
@@ -144,15 +176,24 @@
 import logo from '~/static/images/medical-logo.svg'
 import brand from '~/static/text/brand'
 import Contact from '~/components/Forms/Contact'
-
+import AddressCard from '../Cards/Address'
 export default {
   components: {
-    Contact
+    Contact,
+    AddressCard
   },
   data: () => ({
     logo: logo,
     brand: brand,
     lang: 'en',
+    clinicData: [
+      {
+        name: 'Central Clinic',
+        address: '3480 Preston Ridge Rd Suite 500, Alpharetta, GA 30005',
+        email: 'Example@example.com',
+        phone: '+1 800-643-6740'
+      }
+    ],
     footers: [
       {
         title: 'Company',

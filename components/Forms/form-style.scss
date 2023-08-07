@@ -218,6 +218,12 @@ display: none;
     border: 1px solid #ccc;
     padding: 20px;
   }
+
+  .formcontact{
+    border: 2px solid blue; /* Cambia el ancho y el color según tus preferencias */
+  // padding: 20px;
+
+  }
   
   .contenedor {
     display: flex;
@@ -242,4 +248,19 @@ display: none;
   .campo-input{
     height: 10vh !important;
   }
+}
+
+.cardtext{
+  height: auto;
+  width: auto;
+}
+.title-card{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  font-size: large;
+  font-family: 'Poppins',sans-serif !important;
+  font-size: calc(1em + 3vw) !important;
+  color: 
+  #252B42;
 }

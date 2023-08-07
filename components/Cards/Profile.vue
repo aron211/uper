@@ -2,7 +2,7 @@
   <div class="cards">
     
         <div class="container-icon">
-           <img :src="avatar" :alt="name" class="photo">
+           <img :src="avatar" class="photo">
          
         </div>
         

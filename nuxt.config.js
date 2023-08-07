@@ -63,9 +63,9 @@ module.exports = {
       // Fonts and Icons
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
-      { rel: 'stylesheet', href: './static/fonts/poppins/Poppins-Bold.ttf' },
-      { rel: 'stylesheet', href: './static/fonts/poppins/Poppins-Light.ttf' },
-      { rel: 'stylesheet', href: './static/fonts/poppins/Poppins-Bold.Regular' },
+      // { rel: 'stylesheet', href: './static/fonts/poppins/Poppins-Bold.ttf' },
+      // { rel: 'stylesheet', href: './static/fonts/poppins/Poppins-Light.ttf' },
+      // { rel: 'stylesheet', href: './static/fonts/poppins/Poppins-Bold.Regular' },
       { rel: 'stylesheet', href: 'https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css' }
     ]
   },
