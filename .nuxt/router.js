@@ -4,9 +4,9 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _535ecab3 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _db22f952 = () => interopDefault(import('..\\pages\\blank-page.vue' /* webpackChunkName: "pages/blank-page" */))
 const _2fb0fe7e = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
+const _535ecab3 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -20,10 +20,6 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/ar",
-    component: _535ecab3,
-    name: "index___ar"
-  }, {
     path: "/blank-page",
     component: _db22f952,
     name: "blank-page___en"
@@ -31,62 +27,6 @@ export const routerOptions = {
     path: "/contact",
     component: _2fb0fe7e,
     name: "contact___en"
-  }, {
-    path: "/de",
-    component: _535ecab3,
-    name: "index___de"
-  }, {
-    path: "/id",
-    component: _535ecab3,
-    name: "index___id"
-  }, {
-    path: "/pt",
-    component: _535ecab3,
-    name: "index___pt"
-  }, {
-    path: "/zh",
-    component: _535ecab3,
-    name: "index___zh"
-  }, {
-    path: "/ar/blank-page",
-    component: _db22f952,
-    name: "blank-page___ar"
-  }, {
-    path: "/ar/contact",
-    component: _2fb0fe7e,
-    name: "contact___ar"
-  }, {
-    path: "/de/blank-page",
-    component: _db22f952,
-    name: "blank-page___de"
-  }, {
-    path: "/de/contact",
-    component: _2fb0fe7e,
-    name: "contact___de"
-  }, {
-    path: "/id/blank-page",
-    component: _db22f952,
-    name: "blank-page___id"
-  }, {
-    path: "/id/contact",
-    component: _2fb0fe7e,
-    name: "contact___id"
-  }, {
-    path: "/pt/blank-page",
-    component: _db22f952,
-    name: "blank-page___pt"
-  }, {
-    path: "/pt/contact",
-    component: _2fb0fe7e,
-    name: "contact___pt"
-  }, {
-    path: "/zh/blank-page",
-    component: _db22f952,
-    name: "blank-page___zh"
-  }, {
-    path: "/zh/contact",
-    component: _2fb0fe7e,
-    name: "contact___zh"
   }, {
     path: "/",
     component: _535ecab3,

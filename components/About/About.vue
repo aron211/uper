@@ -16,10 +16,10 @@
         <v-card-text>
           <!-- Aquí coloca tu texto u otros elementos dentro de la card -->
           <!-- <title-deco class="title use-text-subtitle" text="Quienes somos?" :bg="photo"/> -->
-          <title class="title">
-            <h3 class="titletext">
-              Quienes somos?
-            </h3>
+          <title class="title titletext">
+            Quienes somos?
+            <!-- <h3 class="titletext">
+            </h3> -->
           </title>
           <br>
           <!-- <span class="title">Quienes somos?</span> -->

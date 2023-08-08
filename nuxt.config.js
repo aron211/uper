@@ -91,10 +91,10 @@ module.exports = {
   plugins: [
     '~/plugins/vue-wow-config',
     '~/plugins/vue-fragment-config',
-    { src: '~/plugins/vue-youtube-config', ssr: false },
+    { src: '~/plugins/vue-youtube-config', ssr: true },
     { src: '~plugins/i18n-config.js' },
-    { src: '~/plugins/caroussel-config', ssr: false },
-    { src: '~/plugins/vue-scroll-nav', ssr: false }
+    { src: '~/plugins/caroussel-config', ssr: true },
+    { src: '~/plugins/vue-scroll-nav', ssr: true }
   ],
   /*
   ** Nuxt.js dev-modules

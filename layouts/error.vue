@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       pageNotFound: 'Not Found',
-      otherError: 'An error occurred'
+      otherError: 'an error occurred'
     }
   }
 }

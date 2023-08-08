@@ -48,9 +48,9 @@
           <clinics />
         </section> -->
       </div>
-      <!-- <hidden point="mdDown">
+      <hidden point="mdDown">
         <page-nav />
-      </hidden> -->
+      </hidden>
       <main-footer />
       <hidden point="mdDown">
         <notification />

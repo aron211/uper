@@ -21,10 +21,10 @@ import nuxt_plugin_nuxtgooglemaps_75690c04 from 'nuxt_plugin_nuxtgooglemaps_7569
 import nuxt_plugin_nuxtmq_c35e998a from 'nuxt_plugin_nuxtmq_c35e998a' // Source: .\\nuxt-mq.js (mode: 'all')
 import nuxt_plugin_vuewowconfig_32ee3066 from 'nuxt_plugin_vuewowconfig_32ee3066' // Source: ..\\plugins\\vue-wow-config (mode: 'all')
 import nuxt_plugin_vuefragmentconfig_12a6b83c from 'nuxt_plugin_vuefragmentconfig_12a6b83c' // Source: ..\\plugins\\vue-fragment-config (mode: 'all')
-import nuxt_plugin_vueyoutubeconfig_52b5d649 from 'nuxt_plugin_vueyoutubeconfig_52b5d649' // Source: ..\\plugins\\vue-youtube-config (mode: 'client')
+import nuxt_plugin_vueyoutubeconfig_52b5d649 from 'nuxt_plugin_vueyoutubeconfig_52b5d649' // Source: ..\\plugins\\vue-youtube-config (mode: 'all')
 import nuxt_plugin_i18nconfig_ad306bc6 from 'nuxt_plugin_i18nconfig_ad306bc6' // Source: ..\\plugins\\i18n-config.js (mode: 'all')
-import nuxt_plugin_carousselconfig_6e4e7344 from 'nuxt_plugin_carousselconfig_6e4e7344' // Source: ..\\plugins\\caroussel-config (mode: 'client')
-import nuxt_plugin_vuescrollnav_65918480 from 'nuxt_plugin_vuescrollnav_65918480' // Source: ..\\plugins\\vue-scroll-nav (mode: 'client')
+import nuxt_plugin_carousselconfig_6e4e7344 from 'nuxt_plugin_carousselconfig_6e4e7344' // Source: ..\\plugins\\caroussel-config (mode: 'all')
+import nuxt_plugin_vuescrollnav_65918480 from 'nuxt_plugin_vuescrollnav_65918480' // Source: ..\\plugins\\vue-scroll-nav (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -253,7 +253,7 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_vuefragmentconfig_12a6b83c(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_vueyoutubeconfig_52b5d649 === 'function') {
+  if (typeof nuxt_plugin_vueyoutubeconfig_52b5d649 === 'function') {
     await nuxt_plugin_vueyoutubeconfig_52b5d649(app.context, inject)
   }
 
@@ -261,11 +261,11 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_i18nconfig_ad306bc6(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_carousselconfig_6e4e7344 === 'function') {
+  if (typeof nuxt_plugin_carousselconfig_6e4e7344 === 'function') {
     await nuxt_plugin_carousselconfig_6e4e7344(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_vuescrollnav_65918480 === 'function') {
+  if (typeof nuxt_plugin_vuescrollnav_65918480 === 'function') {
     await nuxt_plugin_vuescrollnav_65918480(app.context, inject)
   }
 

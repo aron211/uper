@@ -157,14 +157,14 @@
         </section>
       </v-col>
       <div class="main-wrap">
-    <decoration />
+    <!-- <decoration /> -->
     <!-- <contact /> -->
   </div>
     </v-row>
-    <p class="body-2 text-center" v-if="isMobile">
+    <!-- <p class="body-2 text-center" v-if="isMobile">
       &copy;&nbsp;
       {{ brand.medical.footerText }}
-    </p>
+    </p> -->
   </v-container>
 </template>
 
@@ -177,10 +177,13 @@ import logo from '~/static/images/medical-logo.svg'
 import brand from '~/static/text/brand'
 import Contact from '~/components/Forms/Contact'
 import AddressCard from '../Cards/Address'
+// import Decoration from '~/components/Forms/Decoration'
+
 export default {
   components: {
     Contact,
     AddressCard
+    // Decoration
   },
   data: () => ({
     logo: logo,
