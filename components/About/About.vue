@@ -10,32 +10,35 @@
           <div class="containerdiv">
             
             <img :src=integral alt="" class="img2">
-          
-            <v-card class="curved-right ard-overlay" >
+            <div class="content">
+              <v-card class="curved-right ard-overlay " >
             
-        <v-card-text>
-          <!-- Aquí coloca tu texto u otros elementos dentro de la card -->
-          <!-- <title-deco class="title use-text-subtitle" text="Quienes somos?" :bg="photo"/> -->
-          <title class="title titletext">
-            Quienes somos?
-            <!-- <h3 class="titletext">
-            </h3> -->
-          </title>
-          <br>
-          <!-- <span class="title">Quienes somos?</span> -->
-          <p class="title-default subtitle">
-            <a href="" class="quienessomosweb">Quienes somos? <br> <br></a>
-            <a class="text">"Urpe Integral Services</a> es como tu amigo confiable que te guía a través de los trámites"
-          </p>
-        
-          <p class="title-default use-text-subtitle parrafo">
-             "Desde inmigración, impuestos, reparación de crédito y bienes raíces en los Estados Unidos.
-            Nos adaptamos a tus necesidades, ofreciéndote consejos y soluciones personalizadas para ayudarte a alcanzar tu estabilidad.
-            En Urpe, estamos a tu lado en cada paso del camino, haciendo tu vida más fácil y próspera en tu nuevo hogar."
-          </p>
-        </v-card-text>
-      </v-card>
-      <img src='../../static/images/urpe/somos.jpg' alt="" class="img1">
+            <v-card-text>
+              <!-- Aquí coloca tu texto u otros elementos dentro de la card -->
+              <!-- <title-deco class="title use-text-subtitle" text="Quienes somos?" :bg="photo"/> -->
+              <title class="title titletext">
+                Quienes somos?
+                <!-- <h3 class="titletext">
+                </h3> -->
+              </title>
+              <br>
+              <!-- <span class="title">Quienes somos?</span> -->
+              <p class="title-default subtitle">
+                <a href="" class="quienessomosweb">Quienes somos? <br> <br></a>
+                <a class="text">"Urpe Integral Services</a> es como tu amigo confiable que te guía a través de los trámites"
+              </p>
+            
+              <p class="title-default use-text-subtitle parrafo">
+                 "Desde inmigración, impuestos, reparación de crédito y bienes raíces en los Estados Unidos.
+                Nos adaptamos a tus necesidades, ofreciéndote consejos y soluciones personalizadas para ayudarte a alcanzar tu estabilidad.
+                En Urpe, estamos a tu lado en cada paso del camino, haciendo tu vida más fácil y próspera en tu nuevo hogar."
+              </p>
+            </v-card-text>
+          </v-card>
+          <img src='../../static/images/urpe/somos.jpg' alt="" class="img1">
+            </div>
+          
+           
 
           </div>
         </v-col>

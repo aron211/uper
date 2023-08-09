@@ -4,9 +4,9 @@
   @include
    breakpoints-up(md){
 background-image: none;
-.img2{
-  display: none;
-}
+// .img2{
+//   display: none;
+// }
   }
  
   @include breakpoints-down(sm){
@@ -48,54 +48,115 @@ background-image: none;
 }
 
 
-@media screen and (max-width: 600px) {
-  .containerdiv {
-    flex-direction: column;
+// @media screen and (max-width: 600px) {
+//   .containerdiv {
+//     flex-direction: column;
   
-  }
-  .img1,
-  .img2 {
-    max-width: 100%;
-    height: auto;
-  }
-  .curved-right {
-    border-radius: 0 !important;
-    margin-top: 20px;
-  }
-}
+//   }
+//   .img1,
+//   .img2 {
+//     max-width: 100%;
+//     height: auto;
+//   }
+// }
 
 @media screen and (min-width: 601px) {
   .containerdiv {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
    
- 
-  }
-  
-  .img1 {
-    max-width: 50%;
-    height: auto;
     position: relative;
-   // margin-left: 3em; /* Agregar margen izquierdo */
   }
-  .curved-right {
-    border-radius: 15px 0 0 15px;
-    margin-bottom: 0;
-    position:absolute;
-    margin-top: 10vh !important;
-    right: 0; /* Alinear la tarjeta a la derecha */
-    top: -10px; /* Ajustar el valor según cuánto deseas que la tarjeta se superponga */
-    z-index: 1; /* Asegura que la tarjeta esté por encima de la imagen */
+
+
+  .content {
+    // display: flex;
+    // align-items: center;
+    // flex: 1;
+    // margin-right: 20px;
+    display: flex;
+    align-items: center;
     
   }
-  .card-overlay {
-    background-color: white; /* Puedes ajustar el color de fondo de la tarjeta */
-    padding: 20px;
+  .quienessomosweb{
+    color: black !important;
+  }
+  .img1 {
+   
+    height: 90vh;
+    width: 40vw;
+    top: 0;
+    right: 0;
+    // opacity: 60%;
+    z-index: 0;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50px 0 0 0 !important; /* Redondear la esquina superior izquierda */
+
+  
+    
+  }
+  .img2 {
+   
+    height: 100vh; /* La altura se ajustará automáticamente para mantener la proporción */
+    width: 45vw;
+    top: 0;
+    right: 0 ;
+    opacity: 60%;
+    z-index: 0;
+    position: absolute;
+    object-fit: cover;
+    @include breakpoints-up(md) {
+      transform: rotate(-270deg);
+      // transform-origin: top right;
+      width: 20vh;
+      height: 50vw;
+      top: -30vh;
+      right: auto;
+      z-index: 0;
+      position: absolute;
+      object-fit: cover;
+      left: 50vw;
+      -webkit-transform: rotate(-270deg);
+      -moz-transform: rotate(-270deg);
+      -ms-transform: rotate(-270deg);
+      -o-transform: rotate(-270deg);
+      // background-color: yellow;
+      }
+    
+  }
+  .curved-right {
+  //   border-radius: 15px 0 0 15px;
+  //   margin-bottom: 0;
+  //   position:absolute;
+  //   // margin-top: 10vh !important;
+  //   right: 10 !important; /* Alinear la tarjeta a la derecha */
+  //   top: -10px !important; /* Ajustar el valor según cuánto deseas que la tarjeta se superponga */
+  //   z-index: 1 !important; /* Asegura que la tarjeta esté por encima de la imagen */
+    
+  // }
+  // .card-overlay {
+  //   background-color: white; /* Puedes ajustar el color de fondo de la tarjeta */
+  //   padding: 20px;
+  // }
+  
+  position: absolute;
+  top:10 px; /* Ajustar para superponer la tarjeta */
+  right: 10px; /* Ajustar para superponer la tarjeta */
+  background-color: white; /* Color de fondo de la tarjeta */
+  border-radius: 15px 0 0 15px !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1; /* Asegura que la tarjeta esté por encima de la imagen */
+  width: 45vw;
+  height: 60vh;
+  @include breakpoints-up(md) {
+    margin-top: 0; /* Ajustar margen superior para la versión más grande */
   }
 }
 
+}
 
 
 
