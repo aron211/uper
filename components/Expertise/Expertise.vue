@@ -2,42 +2,31 @@
   <fragment>
     <div class="root">
       <v-container>
-        <v-row class="spacing8">
+        <v-row class="spacing8 containermovil">
           <v-col cols="12" lg="1" v-if="isDesktop" />
           <v-col cols="12" md="5">
-            <div :class="{ 'text-center': !isDesktop}">
-              <div class="title-deco">
+            <div :class="{ 'text-center': !isDesktop }">
+              <div class="title-deco textmovil">
                 <div v-if="isDesktop" class="decoration"></div>
                 <!-- <title-deco :text="$t('medicalLanding.expertise_title')" /> -->
                 <h1 class="experttitle">Expertos</h1>
                 <h4 class="title-default use-text-subtitle expertsubtitleweb">
-                   Esperando tu llamado
+                  Esperando tu llamado
                 </h4>
               </div>
             </div>
           </v-col>
-          <v-col
-            cols="12"     
-            lg="6"
-            md="7"
-            class="mobilecard"
-          >
+          <v-col cols="12" lg="6" md="7" class="mobilecard">
             <h4 class="title-default use-text-subtitle expertsubtitle">
-             Esperando tu llamado
+              Esperando tu llamado
             </h4>
 
             <div class="tag-group">
-              <img
-                v-for="(item, index) in expertosArray"
-                :key="index"
-                :src="item"
-                alt="Experto Image"
-                class="tag-item"
-                @click="realizarLlamada"
-              />
+              <img v-for="(item, index) in expertosArray" :key="index" :src="item" alt="Experto Image" class="tag-item"
+                @click="realizarLlamada" />
             </div>
           </v-col>
-          <v-col
+          <!-- <v-col
             cols="12"     
             lg="6"
             md="7"
@@ -59,12 +48,57 @@
               
             </slick>
           </div>
-          </v-col>
+          </v-col> -->
         </v-row>
+        <!-- Primera fila -->
+        <div>
+          <v-row>
+            <v-col cols="4" class="mx-auto text-center">
+            <div >
+              <div class="title-deco">
+                
+                <!-- <title-deco :text="$t('medicalLanding.expertise_title')" /> -->
+                <h1 class="experttitle">Expertos</h1>
+                <h4 class="expertsubtitleweb">
+                  Esperando tu <br>llamado
+                </h4>
+              </div>
+            </div>
+          </v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="4" class="mx-auto text-center">
+              <img style="margin-bottom: -300px;" :src="Group1Image" alt="">
+            </v-col>
+          </v-row>
+      
+          <!-- Segunda fila -->
+          <v-row class="second-row">
+            <v-col cols="4" class="text-left">
+              <img class="imgleft" :src="Group2Image" alt="">
+            </v-col>
+            <v-col style="display: none; background-color: rgb(223, 77, 20);" cols="4" class="text-rigth">
+      
+      
+            </v-col>
+            <v-col  cols="4">
+              <img :src="Group3Image" alt="">
+            </v-col>
+          </v-row>
+      
+          <!-- Tercera fila -->
+          <v-row >
+            <v-col cols="4" class=" mx-auto text-center">
+              <img style="margin-top: -300px;" :src="Group4Image" alt="">
+            </v-col>
+          </v-row>
+        </div>
       </v-container>
+      
+    
     </div>
-  </fragment>
-</template>
+    </fragment>
+  </template>
 
 <style lang="scss" scoped>
 @import './expertise-style.scss';
@@ -93,7 +127,12 @@ export default {
   data() {
     return {
       loaded: false,
+      Group1Image,
+        Group2Image,
+        Group3Image,
+        Group4Image,
       slickOptions: {
+
         dots: false,
         infinite: true,
         speed: 500,
@@ -107,7 +146,7 @@ export default {
         vertical: true
       },
 
-expertosArray: [
+      expertosArray: [
         Group1Image,
         Group2Image,
         Group3Image,

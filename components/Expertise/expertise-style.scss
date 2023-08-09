@@ -23,16 +23,16 @@ $red-buble: '/images/medical/red_buble.png';
   position: absolute;
 }
 
-.decoration {
-  width: 300px;
-  height: 300px;
-  top: 10vh;
-  right: -50px;
-  border-radius: 50%;
-  border: 2px solid;
-  @include use-theme(border-color, $palette-primary-light, $palette-primary-dark);
-  position: absolute;
-}
+  // .decoration {
+  //   width: 300px;
+  //   height: 300px;
+  //   top: 10vh;
+  //   right: -50px;
+  //   border-radius: 50%;
+  //   border: 2px solid;
+  //   @include use-theme(border-color, $palette-primary-light, $palette-primary-dark);
+  //   position: absolute;
+  // }
 
 .desc {
   line-height: 32px;
@@ -170,3 +170,24 @@ $red-buble: '/images/medical/red_buble.png';
   color: rgb(255, 255, 255);
 }
 
+.containermovil{
+  @include breakpoints-up(sm) {
+    display: none;
+  }
+}
+.containerweb{
+  // float: left;
+  @include breakpoints-down(sm) {
+    display: none;
+  }
+  img{
+    width: 50vw !important;
+    height: 60vh !important;
+    object-fit: contain;
+  }
+}
+
+.second-row{
+  justify-content: space-between;
+
+}
