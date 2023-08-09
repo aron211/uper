@@ -2,10 +2,10 @@
   <fragment>
     <div class="root">
       <div class="deco"></div>
-      <v-container :class="{ 'fixed-width': mdUp }">
-
+      <v-container :class="{ 'fixed-width': mdUp }" class="containerdiv">
+          
         <v-row class="spacing6" justify="center">
-          <v-col cols="12" sm="9" md="2" class="pa-0">
+          <v-col cols="12" sm="12" md="12" class="pa-0">
             <div class="side-filter">
               <h4 class="title-primary">
                 SERVICIOS
@@ -50,14 +50,16 @@
                       duration="0.4s"
                       name="fadeInUpShort"
                     > </u-animate> -->
-                  <div>
-                    <profile-card :avatar="item.avatar" :title="item.title" :description="item.description" />
+                  <div class="profile">
+                    <profile-card  :avatar="item.avatar" :title="item.title" :description="item.description" />
                   </div>
 
                 </v-col>
+                
               </v-row>
-              <v-col>
-                <v-btn @click="realizarLlamada" color="primary" class="consulta" style="text-transform: capitalize">
+             
+              <v-col  cols="12" class="btncol" >
+                <v-btn @click="realizarLlamada" color="primary" class="consulta " style="text-transform: capitalize">
                   <!-- {{ $t('common.form_send') }} -->
                   Consulta Gratis
                 </v-btn>

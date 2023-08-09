@@ -2,37 +2,22 @@
   {
     "name": "blank-page___en",
     "path": "/blank-page",
-<<<<<<< HEAD
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\uper\\\\pages\\\\blank-page.vue",
     "chunkName": "pages/blank-page",
     "_name": "_29f399d8"
-=======
-    "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\blank-page.vue",
-    "chunkName": "pages/blank-page"
->>>>>>> 18330d266cc4b262572ea0e80a6e6b217e91c360
   },
   {
     "name": "contact___en",
     "path": "/contact",
-<<<<<<< HEAD
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\uper\\\\pages\\\\contact.vue",
     "chunkName": "pages/contact",
     "_name": "_27599bb8"
-=======
-    "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact"
->>>>>>> 18330d266cc4b262572ea0e80a6e6b217e91c360
   },
   {
     "name": "index___en",
     "path": "/",
-<<<<<<< HEAD
     "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\uper\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
     "_name": "_247d78d6"
-=======
-    "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
->>>>>>> 18330d266cc4b262572ea0e80a6e6b217e91c360
   }
 ]
