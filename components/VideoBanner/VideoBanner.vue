@@ -99,7 +99,7 @@
               </div>
             </v-card> -->
             <div class="consultas">
-              <v-btn class="btnconsultas" style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
+              <v-btn class="btnconsultas" @click="realizarLlamada" style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
             </div>
           </div>
         </v-col>
@@ -138,7 +138,8 @@ export default {
       play: false,
       playCtrl: true,
       cover: imgAPI.urpe[0],
-      juntasdir
+      juntasdir,
+      nroTlf: '+1 800-643-6740'
     }
   },
   methods: {
@@ -156,7 +157,10 @@ export default {
       } else {
         this.player.pauseVideo()
       }
-    }
+    },
+    realizarLlamada() {
+      window.location.href = 'tel:' + this.nroTlf;
+  },
   },
   computed: {
     player() {

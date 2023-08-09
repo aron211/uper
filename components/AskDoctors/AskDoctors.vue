@@ -57,7 +57,7 @@
                 </v-col>
               </v-row>
               <v-col>
-                <v-btn color="primary" class="consulta" style="text-transform: capitalize">
+                <v-btn @click="realizarLlamada" color="primary" class="consulta" style="text-transform: capitalize">
                   <!-- {{ $t('common.form_send') }} -->
                   Consulta Gratis
                 </v-btn>
@@ -99,6 +99,7 @@ export default {
       service2,
       service3,
       service4,
+      nroTlf: '+1 800-643-6740',
       // categories: [
       //   'all',
       //   'Orthopedic',
@@ -130,6 +131,11 @@ export default {
           description: 'Asesoría total en la compra y venta de bienes raíces.'
         }
       ]
+    }
+  },
+  methods: {
+    realizarLlamada() {
+      window.location.href = 'tel:' + this.nroTlf;
     }
   },
   mounted() {
