@@ -1,7 +1,7 @@
 <template>
   <fragment>
     <v-navigation-drawer
-      v-if="isMobile"
+      
       v-model="openDrawer"
       fixed
       temporary
@@ -33,7 +33,7 @@
                   :src="logo"
                   alt="logo"
                 >
-                <!-- {{ brand.medical.name }} -->
+                
               </nuxt-link>
               <scrollactive
                 v-if="!invert && loaded"
@@ -48,7 +48,7 @@
                     :src="logo"
                     alt="logo"
                   >
-                  <!-- {{ brand.medical.name }} -->
+                  
                 </a>
               </scrollactive>
             </div>
@@ -72,7 +72,7 @@
             class="nav-menu"
           >
 
-            <div v-if="isDesktop">
+            <!-- <div v-if="isDesktop">
               <scrollactive
                 v-if="loaded"
                 :offset="navOffset"
@@ -100,28 +100,17 @@
                     {{ $t('medicalLanding.header_'+item.name) }}
                   </v-btn>
                 </li>
-                <!-- <li>
-                  <v-btn
-                    :href="link.medical.contact"
-                    text
-                  >
-                    {{ $t('medicalLanding.header_contact') }}
-                  </v-btn>
-                </li> -->
               </scrollactive>
-            </div>
+            </div> -->
 
             <!-- <setting-menu :invert="invert" /> -->
             <v-btn
-                v-if="isMobile"
+                
                 :class="{ 'is-active': openDrawer }"
                 class="hamburger hamburger--spin mobile-menu"
                 plain
                 @click.stop="handleToggleOpen"
               >
-                <!-- <span class="hamburger-box">
-                  <span class="bar hamburger-inner" />
-                </span> -->
                 <v-img class="iconMenu" :src="iconMenu" alt="Icono del menú" />
               </v-btn>
           </nav>

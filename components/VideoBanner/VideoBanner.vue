@@ -1,11 +1,11 @@
 <template>
-  <div class="hero-content">
+  <div class="hero-content" style="margin-top: 5vh;">
     <hidden point="smUp">
       <figure class="mobile-cover">
         <img :src="cover" alt="cover">
       </figure>
     </hidden>
-    <v-container style="float: left;" :class="{ 'fixed-width': mdUp }">
+    <v-container style="float: left; margin-top: 6vh;" :class="{ 'fixed-width': mdUp }">
       <v-row>
 
         <v-col v-if="isTablet" md="6" cols="6" class="visual-content" style="float: left;">
@@ -61,7 +61,7 @@
         </v-col>
         <v-col cols="6" md="6">
       <div class="banner-textweb">
-        <div class="titleweb">
+        <div class="titlew">
           <h3 class="text-helper use-text-title titleweb">
             <!-- {{ $t('medicalLanding.banner_title') }} -->
             Tu guía en cada trámite, <br> <a style="color:#2091F9">Mejorando</a> Tu <br>Vida

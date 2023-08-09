@@ -1,9 +1,13 @@
-@mixin deco-circle {
-  width: 915px;
-  height: 915px;
-  position: absolute;
-  border-radius: 50%;
-}
+// @mixin deco-circle {
+//   width: 915px;
+//   height: 915px;
+//   position: absolute;
+//   border-radius: 10%;
+//   -webkit-border-radius: 10%;
+//   -moz-border-radius: 10%;
+//   -ms-border-radius: 10%;
+//   -o-border-radius: 10%;
+// }
 
 .hero-content {
   position: relative;
@@ -124,6 +128,20 @@
   }
 }
 
+.titleweb{
+  font-family: 'Poppins',sans-serif !important;
+  font-weight: 600;
+  font-size: calc(2.5em + 0.9vw);
+  line-height: 1;
+  // background-color: rebeccapurple !important;
+}
+
+.subtitleweb{
+  margin-top: 5.5vh;
+  font-family: 'Poppins',sans-serif !important;
+  margin-bottom: $spacing1;
+  font-size: calc(0.8em + 0.9vw);
+}
 .consultasweb{
   display: flex;
   justify-content: center;
@@ -230,9 +248,10 @@
 }
 
 .video-wrap {
+  // background-color: red !important;
   position: relative;
   width: 50vw;
-  height: 90vh;
+  height: 10vh;
   margin-top: $spacing1;
   @include breakpoints-down(sm) {
     display: none;
