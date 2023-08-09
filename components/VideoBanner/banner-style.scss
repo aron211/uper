@@ -13,7 +13,7 @@
     margin: 0 auto;
   }
   @include breakpoints-up(lg) {
-    @include padding-left($spacing6);
+    padding-left: 0;
     margin-bottom: 0;
   }
   @include breakpoints-down(sm) {
@@ -25,12 +25,16 @@
 }
 
 .banner-text {
+  // background-color: aqua;
   position: relative;
   z-index: 4;
   padding: spacing(4, 0);
   @include breakpoints-up(md) {
     // @include palette-text-primary;
     margin-top: -10vh;
+    visibility: hidden;
+
+    // display: none;
   }
   @include breakpoints-down(md) {
     // background-color: rgb(196, 20, 163);
@@ -52,12 +56,11 @@
 .title {
   // margin-top: $spacing12;
   margin-bottom: $spacing3;
+  @include breakpoints-up(md) {
+    visibility: hidden;
+  }
   @include breakpoints-down(md) {
-    // background-color: blue;
-    // border-color: red;
-    // margin-top: $spacing15;
     height: 20vh;
-    
   }
 }
 .titleMovil{
@@ -71,6 +74,7 @@
     // margin-top: 53vh;
   }
 }
+
 
 .text-helper {
   display: inline-block;
@@ -106,6 +110,26 @@
   justify-content: center;
   .btnconsultas{
     margin-top: 1vh;
+    font-family: 'Poppins',sans-serif !important;
+    font-size: calc(0.5em + 0.5vw);
+    text-transform: capitalize;
+  }
+}
+
+.banner-textweb{
+  margin-top: 10vh;
+  margin-left: 10vw;
+  @include breakpoints-down(sm) {
+    display: none;
+  }
+}
+
+.consultasweb{
+  display: flex;
+  justify-content: center;
+  .btnconsultas{
+    margin-top: 10vh;
+    // bottom: 0;
     font-family: 'Poppins',sans-serif !important;
     font-size: calc(0.5em + 0.5vw);
     text-transform: capitalize;
@@ -206,30 +230,21 @@
 }
 
 .video-wrap {
-  // margin-top: -5vh;
-  // background-color: aqua;
   position: relative;
-  // overflow: hidden;
-  // border-radius: 50%;
-  width: 100vw;
+  width: 50vw;
   height: 90vh;
-  margin-top: $spacing8;
-  
-  // .v-application--is-ltr & {
-  //   border-top-left-radius: 0;
-  // }
-  // .v-application--is-rtl & {
-  //   border-top-right-radius: 0;
-  // }
+  margin-top: $spacing1;
   @include breakpoints-down(sm) {
     display: none;
   }
 }
 
 .video-figure {
+  // background-color: aqua;
   position: absolute;
   height: 50vh;
-  width: 100vw;
+  width: 50vw;
+  float: right;
 
   // background-color: yellow;
 }
@@ -237,9 +252,10 @@
 .inner-figure {
   // background: $palette-primary-main;
   // background-color: brown;
-  width: 100vw;
-  height: 90vh;
+  width: 50vw;
+  height: 50vh;
   position: absolute;
+  // float: right;
   // img {
   //   display: block;
   //   // min-width: 100%;
@@ -266,6 +282,13 @@
   //     opacity: 1
   //   }
   // }
+}
+.imgWeb{
+  border-bottom-right-radius: 50px;
+  float: left;
+  width: 50vw;
+  height: 90vh;
+  object-fit: cover;
 }
 
 .juntadir{
