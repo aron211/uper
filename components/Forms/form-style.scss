@@ -253,6 +253,10 @@ display: none;
 .cardtext{
   height: auto;
   width: auto;
+  @media screen and (min-width: 601px) {
+    height: 100vh;
+    width: 80vw;
+  }
 }
 .title-card{
   text-align: center;

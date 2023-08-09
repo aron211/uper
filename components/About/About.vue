@@ -1,17 +1,17 @@
 <template>
   <div class="root">
     
-    <v-container fluid class="fixed-width">
+    <v-container fluid  class="fixed-width contweb">
       
-      <v-row>
+      <v-row class="row-cont">
        
         <v-col cols="12"  >
         
           <div class="containerdiv">
             
             <img :src=integral alt="" class="img2">
-
-            <v-card class="curved-right" >
+          
+            <v-card class="curved-right ard-overlay" >
             
         <v-card-text>
           <!-- Aquí coloca tu texto u otros elementos dentro de la card -->
@@ -35,6 +35,8 @@
           </p>
         </v-card-text>
       </v-card>
+      <img src='../../static/images/urpe/somos.jpg' alt="" class="img1">
+
           </div>
         </v-col>
       </v-row>
@@ -50,7 +52,7 @@
 <script>
 import imgAPI from '~/static/images/imgAPI'
 
-import TitleDeco from '../Title/WithDecoration'
+//import TitleDeco from '../Title/WithDecoration'
 import somos from '../../static/images/urpe/somos.jpg'
 import integral from '../../static/images/urpe/integral2.png'
 
@@ -63,7 +65,7 @@ export default {
     }
   },
   components: {
-    TitleDeco
+    //TitleDeco
   },
   computed: {
     isDesktop() {
