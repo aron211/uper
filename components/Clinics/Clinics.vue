@@ -15,43 +15,8 @@
             <!-- {{ $t('medicalLanding.clinic_title') }} -->
             Disponible <a href="" style="color: #2091F9; text-decoration: none;">24/7</a>
           </h4>
-          
-          <!-- <div class="block">
-            <u-animate-container>
-              <div v-for="(item, index) in clinicData" :key="index">
-                <u-animate
-                  :offset="-50"
-                  :delay="(index * 0.3) + 's'"
-                  name="fadeInLeftShort"
-                  duration="0.5s"
-                >
-                  <AddressCard
-                    :address="item.address"
-                    :phone="item.phone"
-                    :email="item.email"
-                  />
-                </u-animate>
-              </div>
-            </u-animate-container>
-          </div> -->
+        
         </v-col>
-        <!-- <v-col cols="12" md="6" class="pa-6">
-          <v-card class="map">
-            <GMap
-              ref="gMap"
-              :cluster="{options: {styles: clusterStyle}}"
-              :center="{lat: locations[1].lat, lng: locations[1].lng}"
-              :options="{fullscreenControl: false}"
-              :zoom="6"
-            >
-              <GMapMarker
-                v-for="location in locations"
-                :key="location.id"
-                :position="{lat: location.lat, lng: location.lng}"
-              />
-            </GMap>
-          </v-card>
-        </v-col> -->
       </v-row>
     </v-container>
   </div>

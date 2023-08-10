@@ -2,10 +2,10 @@
   <fragment>
     <div class="root">
       <div class="deco"></div>
-      <v-container :class="{ 'fixed-width': mdUp }">
+      <v-container :class="{ 'fixed-width': mdUp }" class="containerdiv">
 
         <v-row class="spacing6" justify="center">
-          <v-col cols="12" sm="9" md="2" class="pa-0">
+          <v-col cols="12" sm="12" md="12" class="pa-0">
             <div class="side-filter">
               <h4 class="title-primary">
                 SERVICIOS
@@ -45,19 +45,16 @@
             <div class="massonry">
               <v-row>
                 <v-col v-for="(item, index) in doctorsData" :key="index" cols="12" sm="6" class="px-lg-8 px-3 py-3">
-                  <!-- <u-animate
-                      :delay="(0.2 * index) + 's'"
-                      duration="0.4s"
-                      name="fadeInUpShort"
-                    > </u-animate> -->
-                  <div>
+                  <div class="profile">
                     <profile-card :avatar="item.avatar" :title="item.title" :description="item.description" />
                   </div>
 
                 </v-col>
+
               </v-row>
-              <v-col>
-                <v-btn @click="realizarLlamada" color="primary" class="consulta" style="text-transform: capitalize">
+
+              <v-col cols="12" class="btncol">
+                <v-btn @click="realizarLlamada" color="primary" class="consulta " style="text-transform: capitalize">
                   <!-- {{ $t('common.form_send') }} -->
                   Consulta Gratis
                 </v-btn>
@@ -135,7 +132,7 @@ export default {
   },
   methods: {
     realizarLlamada() {
-      window.location.href = 'tel:' + this.nroTlf;
+      window.location.href = 'tel:' + this.nroTlf
     }
   },
   mounted() {

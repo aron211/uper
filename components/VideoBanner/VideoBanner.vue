@@ -32,7 +32,7 @@
                 </hidden> -->
                 <!-- <img class="imgWeb" v-if="!play || isMobile" :src="cover" alt="cover"> -->
 
-                <hidden point="smDown">
+                <hidden point="xsDown">
                   
                     <img class="imgWeb" v-if="!play || isMobile" :src="cover" alt="cover">
                   

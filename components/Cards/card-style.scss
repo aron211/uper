@@ -3,11 +3,24 @@ $frame-deco: '/images/decoration/frame-deco.png';
 /* Default Card */
 .cards{
 
-align-items: center;
-justify-content: center;
-text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  // @include breakpoints-up(sm) {
+  //  display: none;
+  // }
+  }
+  .cards{
 
-}
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    // @include breakpoints-up(sm) {
+    //  display: none;
+    // }
+    }
 
 .default-card {
   direction: ltr;
@@ -130,16 +143,66 @@ text-align: center;
   overflow: visible;
   margin: 0.5rem 0 1rem 0;
   text-align: center;
-  
   .divider {
     border-bottom: none;
     @include palette-divider;
     background: none;
     margin: spacing(0, 2)
   }
+      @include breakpoints-up(sm) {
+     display: none;
+    }
+}
+.profileweb {
+  overflow: visible;
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  .divider {
+    border-bottom: none;
+    @include palette-divider;
+    background: none;
+    margin: spacing(0, 2)
+  }
+  @include breakpoints-down(sm) {
+    display: none;
+   }
 }
 
 .person-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include breakpoints-up(sm) {
+    display: none;
+   }
+  .photo {
+    width: 80px;
+    height: 80px;
+    // border-radius: 0 50% 50% 50%;
+    // position: relative;
+
+    
+  }
+
+  .container-icon{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .name-card {
+    padding: $spacing1
+  }
+  h4 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+    @include palette-text-secondary
+  }
+}
+.person-blockweb {
   display: flex;
   align-items: center;
   justify-content: center;

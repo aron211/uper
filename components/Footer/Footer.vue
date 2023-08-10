@@ -1,73 +1,8 @@
 // eslint-disable-next-line vue/multi-word-component-names
 <template>
   <v-container class="max-lg footer">
-    <v-row class="spacing4">
-       <!-- <v-col
-        class="pa-0"
-        md="3"
-        cols="12"
-      >
-        <div class="logo">
-          
-          <h1 class="title">
-           Contacto
-          </h1>
-        </div>
-      </v-col> -->
-     <!-- <v-col
-        class="pa-6"
-        md="6"
-        cols="12"
-      > -->
-        <!-- <v-expansion-panels v-if="isMobile" class="accordion-root">
-          <v-expansion-panel
-            v-for="(footer, index) in footers"
-            :key="index"
-            class="accordion-content"
-          >
-            <v-expansion-panel-header>
-              <h6 class="title mb-4">
-                {{ footer.title }}
-              </h6>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              <ul>
-                <li
-                  v-for="(item, index) in footer.description"
-                  :key="index"
-                >
-                  <nuxt-link :to="footer.link[index]">
-                    {{ item }}
-                  </nuxt-link>
-                </li>
-              </ul>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels> -->
-        <!-- <v-row justify="space-around" v-if="isDesktop">
-          <v-col
-            v-for="(footer, index) in footers"
-            :key="index"
-            sm="3"
-            cols="12"     
-            class="px-lg-4 px-0 site-map-item"
-          >
-            <h6 class="title-nav">
-              {{ footer.title }}
-            </h6>
-            <ul>
-              <li
-                v-for="(item, index) in footer.description"
-                :key="index"
-              >
-                <nuxt-link :to="footer.link[index]">
-                  {{ item }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </v-col>
-        </v-row>
-      </v-col>  -->
+    <v-row class="spacing4 footermovil">
+
       <v-container class="fixed-width">
         <v-col cols="12" lg="5" md="6" class="pa-6 pt-0">
           <h4 class="title-primary mt-10 titlecont">
@@ -80,91 +15,89 @@
           </h4>
         </v-col>
       </v-container>
-     
-        
-      <v-col
-        md="3"
-        cols="12"
-        class="pa-4"
-      >
+
+
+      <v-col md="3" cols="12" class="pa-4">
         <div class="socmed">
-          <v-btn
-            style=" background-color: transparent !important;"
-            text
-            icon
-            variant="plain"
-            class="button"
-          >
+          <v-btn style=" background-color: transparent !important;" text icon variant="plain" class="button">
             <span class="ion-logo-facebook icon" />
           </v-btn>
-          <v-btn
-            style=" background-color: transparent !important;"
-            text
-            icon
-            variant="plain"
-            class="button"
-          >
+          <v-btn style=" background-color: transparent !important;" text icon variant="plain" class="button">
             <span class="ion-logo-twitter  icon" />
           </v-btn>
-          <!-- <v-btn
-            text
-            icon
-            class="button"
-          >
-            <span class="ion-logo-instagram icon" />
-          </v-btn> -->
-          <!-- <v-btn
-            style=" background-color: transparent !important;"
-            text
-            icon
-            variant="plain"
-            class="button"
-          >
-            <span class="ion-logo-linkedin icon" />
-          </v-btn> -->
         </div>
-        <!-- <v-select
-          :items="langList"
-          :value="lang"
-          v-model="lang"
-          label=""
-          outlined
-          class="select-lang"
-          prepend-inner-icon="mdi-web"
-          @change="switchLang(lang)"
-        /> -->
-        
+
         <section class="space-top-short" id="contacts">
           <div class="block">
             <!-- <u-animate-container> -->
-              <div v-for="(item, index) in clinicData" :key="index">
-                <AddressCard
-                  :address="item.address"
-                  :phone="item.phone"
-                  :email="item.email"
-                />
-                <!-- <u-animate
-                  :offset="-50"
-                  :delay="(index * 0.3) + 's'"
-                  name="fadeInLeftShort"
-                  duration="0.5s"
-                >
-                </u-animate> -->
-              </div>
+            <div v-for="(item, index) in clinicData" :key="index">
+              <AddressCard :address="item.address" :phone="item.phone" :email="item.email" />
+            </div>
             <!-- </u-animate-container> -->
           </div>
           <Contact />
         </section>
       </v-col>
       <div class="main-wrap">
-    <!-- <decoration /> -->
-    <!-- <contact /> -->
-  </div>
+
+      </div>
     </v-row>
-    <!-- <p class="body-2 text-center" v-if="isMobile">
-      &copy;&nbsp;
-      {{ brand.medical.footerText }}
-    </p> -->
+    <v-div>
+
+      <v-row class="titlewebform">
+        <v-col cols="7">
+          <div class="mx-auto titlewebformtext" >
+            <v-col cols="12" lg="5" md="6" class="pa-6 pt-0">
+              <h4 class="title-primary mt-10 titlecont" style="margin-bottom: -50px;">
+                <!-- {{ $t('medicalLanding.clinic_title') }} -->
+                Contacto
+              </h4>
+              <h4 class="title-primary mt-10 subtitledisp">
+                <!-- {{ $t('medicalLanding.clinic_title') }} -->
+                Disponible <a href="" style="color: #2091F9; text-decoration: none;">24/7</a>
+              </h4>
+            </v-col>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <div class="socmed mx-auto">
+          <v-btn style=" background-color: transparent !important;" text icon variant="plain" class="button">
+            <span class="ion-logo-facebook icon" />
+          </v-btn>
+          <v-btn style=" background-color: transparent !important;" text icon variant="plain" class="button">
+            <span class="ion-logo-twitter  icon" />
+          </v-btn>
+        </div>
+      </v-row>
+      <v-row class="text-center">
+        <v-col cols="12">
+  
+          <v-card class="mx-auto"
+            max-width="80vw">
+  
+            <v-card-title class="title-card mx-auto text-center titlewebform">Envianos un Mensaje</v-card-title>
+  
+            <v-form class="formcontact" @submit.prevent="onSubmit" width="80vw">
+  
+              <v-text-field variant="solo-filled" label="Tu Nombre" outlined rounded background-color="#E7E7E7"
+                class="campo-input  inputs textfieldweb" ></v-text-field>
+              <v-text-field label="Tu Email" outlined rounded variant="solo-filled" class="campo-input textfieldweb"
+                background-color="#E7E7E7"></v-text-field>
+  
+              <v-textarea label="Tu mensaje" outlined rounded variant="solo-filled" class="textfieldweb campo-input"
+                background-color="#E7E7E7">
+              </v-textarea>
+              <br>
+              <v-btn color="primary" size="large" type="submit" variant="elevated" class="boton">
+                Enviar
+              </v-btn>
+              <br>
+            </v-form>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-div>
   </v-container>
 </template>
 

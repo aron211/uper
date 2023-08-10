@@ -51,7 +51,7 @@
           </v-col> -->
         </v-row>
         <!-- Primera fila -->
-        <div>
+        <div class="expertweb">
           <v-row>
             <v-col cols="4" class="mx-auto text-center">
             <div >

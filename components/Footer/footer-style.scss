@@ -3,10 +3,16 @@
 .link {
   margin: spacing(1, 1.5);
 }
+.footermovil{
+  @include breakpoints-up(sm) {
+    display: none;
+  }
+}
 .footer {
   margin-top: $spacing8;
   padding-top: $spacing3;
   padding-bottom: $spacing3;
+
   ul {
     margin: 0;
     padding: 0;
@@ -202,4 +208,21 @@
 
 .fixed-width{
   text-align: center;
+}
+
+.textfieldweb{
+  margin-left: 5vw !important;
+  margin-right: 5vw !important;
+}
+.titlewebform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.titlewebformtext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

@@ -1,37 +1,48 @@
 <template>
   <div class="cards">
-    
-        <div class="container-icon">
-           <img :src="avatar" class="photo">
-         
-        </div>
-        
-      
 
-  <v-card class="profile" elevation="0">
-   
-    <div class="person-block">
-     
-      <div class="name-card">
-        <h4>{{ title }}</h4>
-        <p>{{ description }}</p>
-      </div>
+    <div class="container-icon">
+      <img :src="avatar" class="photo">
+
     </div>
-    <!-- <hr class="divider" /> -->
-    <div class="action">
-      <!-- <div class="property">
+
+
+
+    <v-card class="profile" elevation="0">
+
+      <div class="person-block">
+
+        <div class="name-card">
+          <h4>{{ title }}</h4>
+          <p>{{ description }}</p>
+        </div>
+      </div>
+      <!-- <hr class="divider" /> -->
+      <div class="action">
+        <!-- <div class="property">
         <span>
           <i class="ion-thumbsup"></i>&nbsp; {{ rating }}%</span>
           <span><i class="ion-briefcase"></i>&nbsp; {{ exp }} Years</span>
       </div> -->
-      <!-- <v-btn
+        <!-- <v-btn
         color="secondary"
         class="button">
         chat
       </v-btn> -->
-    </div>
-  </v-card>
-</div>
+      </div>
+    </v-card>
+    <v-card class="profileweb" elevation="0">
+      <div class="person-blockweb">
+        <div class="container-iconweb">
+          <img :src="avatar" class="photoweb">
+        </div>
+        <div class="name-card">
+          <h4>{{ title }}</h4>
+          <p>{{ description }}</p>
+        </div>
+      </div>
+    </v-card>
+  </div>
 </template>
 
 <style lang="scss" scoped>

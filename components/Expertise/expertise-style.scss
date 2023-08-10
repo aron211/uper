@@ -186,6 +186,11 @@ $red-buble: '/images/medical/red_buble.png';
     object-fit: contain;
   }
 }
+.expertweb{
+  @include breakpoints-down(sm) {
+    display: none;
+  }
+}
 
 .second-row{
   justify-content: space-between;
