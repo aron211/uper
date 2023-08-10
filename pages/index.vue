@@ -52,7 +52,9 @@
       <hidden point="mdDown">
         <page-nav />
       </hidden>
-      <main-footer />
+      <section id="clinics">
+        <main-footer />
+      </section>
       <hidden point="mdDown">
         <notification />
       </hidden>

@@ -228,7 +228,7 @@
 }
 
 .contactweb{
-  @include breakpoints-down('sm'){
+  @include breakpoints-down(xs){
     display: none;
   }
 }

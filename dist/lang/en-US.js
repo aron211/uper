@@ -34,7 +34,7 @@ export default () => {
         "header_about": "Quienes somos?",
         "header_facility": "Expertos",
         "header_ask-doctors": "Servicios",
-        "header_clinics": "Contactos",
+        "header_footer": "Contacto",
         "header_contact": "contact",
         "header_language": "language",
         "header_theme": "theme mode",
