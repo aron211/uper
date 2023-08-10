@@ -73,7 +73,8 @@
 
         </h5>
         <div class="consultasweb">
-          <v-btn class="btnconsultas" @click="realizarLlamada"
+          <v-btn
+class="btnconsultas" @click="realizarLlamada"
             style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
         </div>
       </div>
@@ -95,7 +96,8 @@
 
         </h5>
         <div class="consultas">
-          <v-btn class="btnconsultas" @click="realizarLlamada"
+          <v-btn
+class="btnconsultas" @click="realizarLlamada"
             style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
         </div>
       </div>
@@ -109,7 +111,7 @@
 
 <script>
 import imgAPI from '~/static/images/imgAPI'
-import DotsParallax from '../Parallax/Dots'
+//import DotsParallax from '../Parallax/Dots'
 import juntasdir from '../../static/images/urpe/juntasdir.jpg'
 
 import youtube from '~/youtube'
@@ -117,8 +119,8 @@ import Hidden from '../Hidden'
 
 export default {
   components: {
-    Hidden,
-    DotsParallax
+    Hidden
+    //DotsParallax
   },
   data() {
     // videoId: 'sbef4EWb4js',
@@ -156,8 +158,8 @@ export default {
       }
     },
     realizarLlamada() {
-      window.location.href = 'tel:' + this.nroTlf;
-    },
+      window.location.href = 'tel:' + this.nroTlf
+    }
   },
   computed: {
     player() {

@@ -173,7 +173,7 @@ $frame-deco: '/images/decoration/frame-deco.png';
   align-items: center;
   justify-content: center;
   text-align: center;
-  @include breakpoints-up(sm) {
+  @include breakpoints-up('md') {
     display: none;
    }
   .photo {
@@ -231,6 +231,7 @@ $frame-deco: '/images/decoration/frame-deco.png';
     font-size: 16px;
     @include palette-text-secondary
   }
+  
 }
 
 .action {
@@ -272,4 +273,13 @@ $frame-deco: '/images/decoration/frame-deco.png';
 .icon {
   color: $palette-primary-main;
   @include margin-right($spacing1);
+}
+
+@include breakpoints-up('md') {
+  .container-icon{
+    display: none !important;
+  }
+  .photo{
+    display: none !important;
+  }
 }

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="cards">
 
@@ -31,6 +32,7 @@
       </v-btn> -->
       </div>
     </v-card>
+    
     <v-card class="profileweb" elevation="0">
       <div class="person-blockweb">
         <div class="container-iconweb">

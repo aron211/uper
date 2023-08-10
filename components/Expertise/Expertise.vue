@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <fragment>
     <div class="root">
@@ -22,7 +23,8 @@
             </h4>
 
             <div class="tag-group">
-              <img v-for="(item, index) in expertosArray" :key="index" :src="item" alt="Experto Image" class="tag-item"
+              <img
+v-for="(item, index) in expertosArray" :key="index" :src="item" alt="Experto Image" class="tag-item"
                 @click="realizarLlamada" />
             </div>
           </v-col>
@@ -115,24 +117,27 @@ import Group2Image from '../../static/images/urpe/Group2.png'
 import Group3Image from '../../static/images/urpe/Group3.png'
 import Group4Image from '../../static/images/urpe/Group4.png'
 
-
 export default {
   components: {
+    // eslint-disable-next-line vue/no-unused-components
     TitleDeco,
+    // eslint-disable-next-line vue/no-unused-components
     Hidden,
+    // eslint-disable-next-line vue/no-unused-components
     KinesisContainer,
+    // eslint-disable-next-line vue/no-unused-components
     KinesisElement,
+    // eslint-disable-next-line vue/no-unused-components
     Slick: () => import('vue-slick')
   },
   data() {
     return {
       loaded: false,
       Group1Image,
-        Group2Image,
-        Group3Image,
-        Group4Image,
+      Group2Image,
+      Group3Image,
+      Group4Image,
       slickOptions: {
-
         dots: false,
         infinite: true,
         speed: 500,
@@ -146,19 +151,13 @@ export default {
         vertical: true
       },
 
-      expertosArray: [
-        Group1Image,
-        Group2Image,
-        Group3Image,
-        Group4Image
-      ],
-      nroTlf: '+1 800-643-6740',
-
+      expertosArray: [Group1Image, Group2Image, Group3Image, Group4Image],
+      nroTlf: '+1 800-643-6740'
     }
   },
   methods: {
     realizarLlamada() {
-      window.location.href = 'tel:' + this.nroTlf;
+      window.location.href = 'tel:' + this.nroTlf
     }
   },
   mounted() {
@@ -169,7 +168,6 @@ export default {
       const lgUp = this.$store.state.breakpoints.lgUp
       return lgUp.indexOf(this.$mq) > -1
     }
-  },
-
+  }
 }
 </script>
