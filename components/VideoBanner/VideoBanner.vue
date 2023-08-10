@@ -8,7 +8,7 @@
     <v-container style="float: left; margin-top: 6vh;" :class="{ 'fixed-width': mdUp }">
       <v-row>
 
-        <v-col v-if="isTablet" md="6" cols="6" class="visual-content" style="float: left;">
+        <v-col v-if="isTablet" md="6" cols="6" class="visual-content" >
           <div class="deco-banner">
             <div class="menu-bg"></div>
             <div class="video-bg"></div>
@@ -33,9 +33,9 @@
                 <!-- <img class="imgWeb" v-if="!play || isMobile" :src="cover" alt="cover"> -->
 
                 <hidden point="xsDown">
-                  
-                    <img class="imgWeb" v-if="!play || isMobile" :src="cover" alt="cover">
-                  
+
+                  <img class="imgWeb" v-if="!play || isMobile" :src="cover" alt="cover">
+
                 </hidden>
                 <!-- <div
                   v-if="yt.use"
@@ -60,25 +60,24 @@
           </div> -->
         </v-col>
         <v-col cols="6" md="6" class="mb-9">
-      <div class="banner-textweb">
-        <div class="titlew">
-          <h3 class="text-helper use-text-title titleweb">
-            <!-- {{ $t('medicalLanding.banner_title') }} -->
-            Tu guía en cada <br> trámite, <br>  <a style="color:#2091F9">Mejorando</a> Tu <br>Vida
-          </h3>
-        </div>
-        <h5 class="subtitleweb use-text-subtitle2">
-          <!-- {{ $t('medicalLanding.banner_subtitle') }} -->
-          Comprometidos con Tu Progreso
+          <div class="banner-textweb">
+            <div class="titlew">
+              <h3 class="text-helper use-text-title titleweb">
+                <!-- {{ $t('medicalLanding.banner_title') }} -->
+                Tu guía en cada <br> trámite, <br> <a style="color:#2091F9">Mejorando</a> Tu <br>Vida
+              </h3>
+            </div>
+            <h5 class="subtitleweb use-text-subtitle2">
+              <!-- {{ $t('medicalLanding.banner_subtitle') }} -->
+              Comprometidos con Tu Progreso
 
-        </h5>
-        <div class="consultasweb">
-          <v-btn
-class="btnconsultas" @click="realizarLlamada"
-            style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
-        </div>
-      </div>
-    </v-col>
+            </h5>
+            <div class="consultasweb">
+              <v-btn class="btnconsultas" @click="realizarLlamada"
+                style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
+            </div>
+          </div>
+        </v-col>
       </v-row>
 
     </v-container>
@@ -96,8 +95,7 @@ class="btnconsultas" @click="realizarLlamada"
 
         </h5>
         <div class="consultas">
-          <v-btn
-class="btnconsultas" @click="realizarLlamada"
+          <v-btn class="btnconsultas" @click="realizarLlamada"
             style="background-color: #252B42; color: rgb(255, 255, 255);" size="small">Consultas Gratis</v-btn>
         </div>
       </div>

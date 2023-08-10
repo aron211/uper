@@ -132,16 +132,27 @@ background-image: none;
   border-radius: 15px 0 0 15px !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   z-index: 1; /* Asegura que la tarjeta esté por encima de la imagen */
-  width: 45vw;
-  height: 60vh;
+  width: 43vw;
+  height: 80vh;
   @include breakpoints-up(md) {
     margin-top: 0; /* Ajustar margen superior para la versión más grande */
+  }
+  @media screen and (min-width: 1904px) {
+    /* Tu estilo para esta resolución aquí */
+    width: 30vw;
+    height: 80vh;
   }
 }
 
 }
 
-
+.cardtext{
+  width: 90%;
+  @include breakpoints-up(lg) {
+    margin-top: 0; 
+    width: 90%;
+  }
+}
 
 h4 {
   @include breakpoints-down(sm) {
@@ -216,7 +227,7 @@ color: #252B42;
 }
 .curved-right {
   position:relative;
-  margin-top: 50vh;
+  margin-top: 20vh;
   top: 0;
   left: 0;
   background-color: #ffffff; /* Color de fondo, puedes cambiarlo */

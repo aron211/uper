@@ -47,7 +47,7 @@
 
       <v-row class="titlewebform">
         <v-col cols="7">
-          <div class="mx-auto titlewebformtext" >
+          <div class="mx-auto titlewebformtext">
             <v-col cols="12" lg="5" md="6" class="pa-6 pt-0">
               <h4 class="title-primary mt-10 titlecont" style="margin-bottom: -50px;">
                 <!-- {{ $t('medicalLanding.clinic_title') }} -->
@@ -73,24 +73,19 @@
       </v-row>
       <v-row class="text-center">
         <v-col cols="12">
-  
-          <v-card
-class="mx-auto"
-            max-width="80vw">
-  
+
+          <v-card class="mx-auto" max-width="80vw">
+
             <v-card-title class="title-card mx-auto text-center titlewebform">Envianos un Mensaje</v-card-title>
-  
+
             <v-form class="formcontact" @submit.prevent="onSubmit" width="80vw">
-  
-              <v-text-field
-variant="solo-filled" label="Tu Nombre" outlined rounded background-color="#E7E7E7"
-                class="campo-input  inputs textfieldweb" ></v-text-field>
-              <v-text-field
-label="Tu Email" outlined rounded variant="solo-filled" class="campo-input textfieldweb"
+
+              <v-text-field variant="solo-filled" label="Tu Nombre" outlined rounded background-color="#E7E7E7"
+                class="campo-input  inputs textfieldweb"></v-text-field>
+              <v-text-field label="Tu Email" outlined rounded variant="solo-filled" class="campo-input textfieldweb"
                 background-color="#E7E7E7"></v-text-field>
-  
-              <v-textarea
-label="Tu mensaje" outlined rounded variant="solo-filled" class="textfieldweb campo-input"
+
+              <v-textarea label="Tu mensaje" outlined rounded variant="solo-filled" class="textfieldweb campo-input"
                 background-color="#E7E7E7">
               </v-textarea>
               <br>
@@ -172,7 +167,7 @@ export default {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
     },
-    langList: function() {
+    langList: function () {
       const list = []
       this.$i18n.locales.map(item => {
         list.push({ text: this.$t('common.' + item.code), value: item.code })
@@ -184,7 +179,7 @@ export default {
     this.lang = this.$i18n.locale
   },
   methods: {
-    switchLang: function(val) {
+    switchLang: function (val) {
       this.$i18n.setLocale(val)
     }
   }

@@ -18,13 +18,25 @@
   }
   @include breakpoints-up(lg) {
     padding-left: 0;
-    margin-bottom: 0;
+    // margin-bottom: 20vh;
   }
   @include breakpoints-down(sm) {
     margin-bottom: 0;
     padding-bottom: $spacing1;
     // margin-top: $spacing8;
 
+  }
+  @media screen and (min-width: 960px) and (max-width: 1264px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-bottom: 10vh;
+  }
+  @media screen and (min-width: 1264px) and (max-width: 1904px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-bottom: -35vh;
+  }
+  @media screen and (min-width: 1904px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-bottom: -10vh;
   }
 }
 
@@ -124,13 +136,29 @@
   // position: fixed;
   right: 0; // Anclará el div al lado derecho
   width: 40vw;
-  margin-left: 20vw;
+  margin-left: 10vw;
   // background-color: aqua;
   margin-top: 10vh;
-  // text-align: right;
-  // margin-left: 10vw;
-  // padding-left: 10vw;
-  // float: right;
+  @media screen and (min-width: 960px) and (max-width: 1264px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-left: 1vw;
+  }
+  @media screen and (min-width: 1264px) and (max-width: 1400px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-left: -5vw;
+  }
+  @media screen and (min-width: 1401px) and (max-width: 1800px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-left: 4vw;
+  }
+  @media screen and (min-width: 1801px) and (max-width: 1900px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-left: 8vw;
+  }
+  @media screen and (min-width: 1904px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-left: 10vw;
+  }
   @include breakpoints-down(sm) {
     display: none;
   }

@@ -115,7 +115,7 @@ import AskDoctors from '~/components/AskDoctors'
 // import Clinics from '~/components/Clinics'
 import Footer from '~/components/Footer'
 import Hidden from '~/components/Hidden'
-// import PageNav from '~/components/PageNav'
+import PageNav from '~/components/PageNav'
 import Notification from '~/components/Notification'
 // import DotsParallax from '~/components/Parallax/Dots'
 // import OvalTop from '~/components/Parallax/OvalTop'
@@ -134,7 +134,7 @@ export default {
     AskDoctors,
     // CallAction,
     // Clinics,
-    // PageNav,
+    PageNav,
     Hidden,
     Notification,
     'main-footer': Footer

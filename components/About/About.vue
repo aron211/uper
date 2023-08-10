@@ -13,7 +13,7 @@
             <div class="content">
               <v-card class="curved-right ard-overlay " >
             
-            <v-card-text>
+            <v-card-text class="cardtext">
               <!-- Aquí coloca tu texto u otros elementos dentro de la card -->
               <!-- <title-deco class="title use-text-subtitle" text="Quienes somos?" :bg="photo"/> -->
               <title class="title titletext">

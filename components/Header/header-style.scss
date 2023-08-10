@@ -110,6 +110,10 @@ $flag: '/images/flag-logo.png';
       .logourpe{
         height: 80px !important;
         width: 99px !important;
+        // @include breakpoints-up(md) {
+        //   height: 90px !important;
+        // width: 900px !important;
+        // }
 
       }
     }
@@ -362,6 +366,13 @@ paper-nav {
   align-items: center;
   width:100px ;
   height: 100px;
+}
+
+.iconMenu{
+  @include breakpoints-up(md) {
+    width: 50px !important;
+    height: 50px;
+  }
 }
 .mobile-menu {
   // background-color: rgb(40, 13, 123);
