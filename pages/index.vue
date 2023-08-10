@@ -1,9 +1,10 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
     <div class="main-wrap">
       <main-header />
       <div class="container-wrap">
-        <oval-top />
+        <!-- <oval-top /> -->
         <section style="margin-left: 0;" id="home">
           <video-banner />
         </section>
@@ -117,14 +118,14 @@ import Hidden from '~/components/Hidden'
 // import PageNav from '~/components/PageNav'
 import Notification from '~/components/Notification'
 // import DotsParallax from '~/components/Parallax/Dots'
-import OvalTop from '~/components/Parallax/OvalTop'
+// import OvalTop from '~/components/Parallax/OvalTop'
 import brand from '~/static/text/brand'
 
 export default {
   components: {
     'main-header': Header,
     // DotsParallax,
-    OvalTop,
+    // OvalTop,
     VideoBanner,
     About,
     // Facilities,

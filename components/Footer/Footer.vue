@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 // eslint-disable-next-line vue/multi-word-component-names
 <template>
   <v-container class="max-lg footer">
@@ -42,7 +43,7 @@
 
       </div>
     </v-row>
-    <v-div>
+    <div class="contactweb">
 
       <v-row class="titlewebform">
         <v-col cols="7">
@@ -73,19 +74,23 @@
       <v-row class="text-center">
         <v-col cols="12">
   
-          <v-card class="mx-auto"
+          <v-card
+class="mx-auto"
             max-width="80vw">
   
             <v-card-title class="title-card mx-auto text-center titlewebform">Envianos un Mensaje</v-card-title>
   
             <v-form class="formcontact" @submit.prevent="onSubmit" width="80vw">
   
-              <v-text-field variant="solo-filled" label="Tu Nombre" outlined rounded background-color="#E7E7E7"
+              <v-text-field
+variant="solo-filled" label="Tu Nombre" outlined rounded background-color="#E7E7E7"
                 class="campo-input  inputs textfieldweb" ></v-text-field>
-              <v-text-field label="Tu Email" outlined rounded variant="solo-filled" class="campo-input textfieldweb"
+              <v-text-field
+label="Tu Email" outlined rounded variant="solo-filled" class="campo-input textfieldweb"
                 background-color="#E7E7E7"></v-text-field>
   
-              <v-textarea label="Tu mensaje" outlined rounded variant="solo-filled" class="textfieldweb campo-input"
+              <v-textarea
+label="Tu mensaje" outlined rounded variant="solo-filled" class="textfieldweb campo-input"
                 background-color="#E7E7E7">
               </v-textarea>
               <br>
@@ -97,7 +102,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-div>
+    </div>
   </v-container>
 </template>
 

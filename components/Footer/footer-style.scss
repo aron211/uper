@@ -226,3 +226,9 @@
   align-items: center;
 
 }
+
+.contactweb{
+  @include breakpoints-down('sm'){
+    display: none;
+  }
+}
