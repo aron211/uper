@@ -149,7 +149,7 @@ $frame-deco: '/images/decoration/frame-deco.png';
     background: none;
     margin: spacing(0, 2)
   }
-      @include breakpoints-up(sm) {
+      @include breakpoints-up(md) {
      display: none;
     }
 }

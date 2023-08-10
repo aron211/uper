@@ -36,7 +36,7 @@
         <div class="container-iconweb">
           <img :src="avatar" class="photoweb">
         </div>
-        <div class="name-card">
+        <div class="name-cardweb">
           <h4>{{ title }}</h4>
           <p>{{ description }}</p>
         </div>
