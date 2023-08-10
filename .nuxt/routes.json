@@ -3,21 +3,18 @@
     "name": "blank-page___en",
     "path": "/blank-page",
     "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\blank-page.vue",
-    "chunkName": "pages/blank-page",
-    "_name": "_db22f952"
+    "chunkName": "pages/blank-page"
   },
   {
     "name": "contact___en",
     "path": "/contact",
     "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_2fb0fe7e"
+    "chunkName": "pages/contact"
   },
   {
     "name": "index___en",
     "path": "/",
     "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_535ecab3"
+    "chunkName": "pages/index"
   }
 ]

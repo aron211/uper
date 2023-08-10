@@ -59,12 +59,12 @@
             <dots-parallax />
           </div> -->
         </v-col>
-        <v-col cols="6" md="6">
+        <v-col cols="6" md="6" class="mb-9">
       <div class="banner-textweb">
         <div class="titlew">
           <h3 class="text-helper use-text-title titleweb">
             <!-- {{ $t('medicalLanding.banner_title') }} -->
-            Tu guía en cada trámite, <br> <a style="color:#2091F9">Mejorando</a> Tu <br>Vida
+            Tu guía en cada <br> trámite, <br>  <a style="color:#2091F9">Mejorando</a> Tu <br>Vida
           </h3>
         </div>
         <h5 class="subtitleweb use-text-subtitle2">

@@ -121,10 +121,15 @@
 }
 
 .banner-textweb{
+  // position: fixed;
+  right: 0; // Anclará el div al lado derecho
+  width: 40vw;
+  margin-left: 20vw;
+  // background-color: aqua;
   margin-top: 10vh;
-  margin-left: 10vw;
-  padding-left: 10vw;
-  left: 0;
+  // text-align: right;
+  // margin-left: 10vw;
+  // padding-left: 10vw;
   // float: right;
   @include breakpoints-down(sm) {
     display: none;
@@ -136,6 +141,7 @@
   font-weight: 600;
   font-size: calc(2em + 0.9vw);
   line-height: 1;
+  padding-left: 10vw;
   // background-color: rebeccapurple !important;
 }
 
@@ -144,6 +150,7 @@
   font-family: 'Poppins',sans-serif !important;
   margin-bottom: $spacing1;
   font-size: calc(0.8em + 0.9vw);
+  padding-left: 10vw;
 }
 .consultasweb{
   display: flex;
