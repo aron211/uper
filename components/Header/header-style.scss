@@ -2,7 +2,7 @@
 
 $flag: '/images/flag-logo.png';
 
-@mixin flag-icon{
+@mixin flag-icon {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -12,21 +12,27 @@ $flag: '/images/flag-logo.png';
   top: 1px;
   background: url($flag) no-repeat transparent;
   background-size: 16px auto;
+
   &.ar {
     background-position: 0 3px;
   }
+
   &.zh {
     background-position: 0 -12px
   }
+
   &.en {
     background-position: 0 -28px
   }
+
   &.de {
     background-position: 0 -44px
   }
+
   &.id {
     background-position: 0 -62px
   }
+
   &.pt {
     background-position: 0 -79px
   }
@@ -35,6 +41,7 @@ $flag: '/images/flag-logo.png';
 .popover {
   @include palette-background-paper;
   width: 200px;
+
   .v-list {
     border-radius: 0
   }
@@ -42,6 +49,7 @@ $flag: '/images/flag-logo.png';
 
 .switch-toggle {
   margin: spacing(0, 2);
+
   ::v-deep .v-input--switch__thumb {
     color: var(--v-secondary-base);
   }
@@ -50,9 +58,11 @@ $flag: '/images/flag-logo.png';
 .flex-menu {
   display: flex;
   margin-top: $spacing1;
+
   label {
     padding-top: 8px
   }
+
   ::v-deep .v-messages {
     display: none
   }
@@ -63,6 +73,7 @@ $flag: '/images/flag-logo.png';
     opacity: 0;
     transform: translateX(-100px)
   }
+
   to {
     opacity: 1;
     transform: none
@@ -77,9 +88,11 @@ $flag: '/images/flag-logo.png';
   transition: all 0.3s ease;
   position: fixed;
   padding: spacing(1, 0);
+
   @include breakpoints-down(md) {
     z-index: 90
   }
+
   .container {
     #main-wrap & {
       @include breakpoints-down(sm) {
@@ -87,9 +100,11 @@ $flag: '/images/flag-logo.png';
       }
     }
   }
+
   nav {
     transition: all 0.5s ease-out;
   }
+
   &.fixed {
     position: fixed;
     top: 0;
@@ -97,53 +112,62 @@ $flag: '/images/flag-logo.png';
     padding: 4px 0;
     @include shadow5;
     @include palette-background-paper;
+
     .logo {
       a {
         @include palette-text-primary;
-        @include breakpoints-down(sm){
-          img{
+
+        @include breakpoints-down(sm) {
+          img {
             height: 80px;
             width: 99px;
+
+            @include breakpoints-up(sm) {
+              height: 110px !important;
+              width: 110px !important;
+            }
           }
         }
       }
-      .logourpe{
-        height: 80px !important;
-        width: 99px !important;
-        // @include breakpoints-up(md) {
-        //   height: 90px !important;
-        // width: 900px !important;
-        // }
 
-      }
     }
+
     .bar {
       @include breakpoints-down(sm) {
         @include palette-background-text-secondary;
-        &:after, &:before {
+
+        &:after,
+        &:before {
           @include palette-background-text-secondary;
         }
       }
     }
+
     nav {
       padding: spacing(1.5, 0);
     }
+
     .icon {
       @include palette-text-secondary
     }
   }
+
   .invert {
     .bar {
       @include breakpoints-down(sm) {
         @include palette-background-text-secondary;
-        &:after, &:before {
+
+        &:after,
+        &:before {
           @include palette-background-text-secondary;
         }
       }
     }
   }
+
   &.open-drawer {
     box-shadow: none !important;
+
     .logo {
       a {
         @include palette-text-primary
@@ -152,7 +176,8 @@ $flag: '/images/flag-logo.png';
   }
 }
 
-.v-toolbar__content, .v-toolbar__extension {
+.v-toolbar__content,
+.v-toolbar__extension {
   padding: 0
 }
 
@@ -161,10 +186,12 @@ $flag: '/images/flag-logo.png';
   display: flex;
   // align-items: center;
   justify-content: space-between;
+
   & nav {
     align-items: center;
     padding: $spacing2;
     display: flex;
+
     // justify-content: flex-start;
     @include breakpoints-down(md) {
       padding: spacing(2, 0)
@@ -188,11 +215,13 @@ $flag: '/images/flag-logo.png';
     width: 100px;
     // font-size: 22px;
     align-items: center;
+
     // font-weight: $font-medium;
     @include breakpoints-up('md') {
       @include palette-text-primary;
     }
   }
+
   img {
     // background-color: yellow;
     transition: all 0.3s ease;
@@ -206,15 +235,18 @@ $flag: '/images/flag-logo.png';
 }
 
 .nav-logo {
-  &.invert .logo a{
+  &.invert .logo a {
     @include palette-text-primary
   }
+
   &.mobile-menu {
     bar {
       @include breakpoints-down(sm) {
         // background-color: aqua;
         @include palette-background-text-secondary;
-        &:after, &:before {
+
+        &:after,
+        &:before {
           @include palette-background-text-secondary;
         }
       }
@@ -223,32 +255,39 @@ $flag: '/images/flag-logo.png';
 }
 
 .nav-menu {
-  > * {
+  >* {
     margin: 0;
+
     @include breakpoints-up(lg) {
       margin: spacing(0, 1);
     }
   }
+
   &.invert {
     ul li a {
       transition: all 0.3s ease-out;
       @include palette-text-primary;
     }
+
     .icon.v-icon {
       @include palette-text-secondary;
     }
   }
+
   .scrollactive-nav {
     list-style: none;
     @include padding-left($spacing5);
+
     li {
       @include breakpoints-up(lg) {
         margin: spacing(0, 2)
       }
+
       list-style: none;
       position: relative;
       display: inline-block;
-      .v-btn  {
+
+      .v-btn {
         text-transform: capitalize;
         font-Size: 18px;
         font-weight: $font-medium;
@@ -260,6 +299,7 @@ $flag: '/images/flag-logo.png';
         margin-top: $spacing1 / 2;
         min-width: 0;
         @include palette-text-primary;
+
         &:after {
           content: '';
           height: 5px;
@@ -271,20 +311,25 @@ $flag: '/images/flag-logo.png';
           @include left(50%);
           transition: all 0.2s cubic-bezier(0.42, 0.16, 0.21, 0.93);
         }
+
         &:hover {
           transition: all 0.3s ease-out;
           background: none;
+
           &:before {
             opacity: 0
           }
+
           &:after {
             width: 60%;
             @include left(8px);
             @include use-theme(border-bottom-color, $palette-primary-main, $palette-primary-light);
           }
         }
+
         &.active {
           @include use-theme(color, $palette-primary-dark, $palette-primary-light);
+
           &:after {
             @include use-theme(border-bottom-color, $palette-primary-dark, $palette-primary-light);
             width: 60%;
@@ -298,15 +343,19 @@ $flag: '/images/flag-logo.png';
 
 .lang-menu {
   text-transform: capitalize;
+
   .flag {
     margin: 0;
+
     & i {
       @include flag-icon;
     }
   }
+
   .lang-list {
     padding: 0;
-    .lang-opt{
+
+    .lang-opt {
       font-size: 0.875rem;
       @include margin-left($spacing2)
     }
@@ -318,7 +367,7 @@ $flag: '/images/flag-logo.png';
 }
 
 .user-menu {
-  & > button {
+  &>button {
     margin: 0 $spacing1;
   }
 }
@@ -335,10 +384,12 @@ $flag: '/images/flag-logo.png';
   .icon.v-icon {
     font-size: 32px;
     transition: all 0.3s ease;
+
     @include breakpoints-down(sm) {
       color: $palette-common-white
     }
   }
+
   .active {
     transform: rotate(30deg)
   }
@@ -354,45 +405,59 @@ $flag: '/images/flag-logo.png';
 
 paper-nav {
   width: 100%;
+
   @media (min-width: 680px) {
     width: 300px
   }
 }
 
-.btnIconMenu{
+.btnIconMenu {
   // background-color: red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width:100px ;
+  width: 100px;
   height: 100px;
 }
 
-.iconMenu{
+.iconMenu {
   @include breakpoints-up(md) {
     width: 50px !important;
     height: 50px;
   }
 }
+
 .mobile-menu {
   // background-color: rgb(40, 13, 123);
   margin: spacing(0, 0);
+
   .bar {
     background-color: $palette-common-white;
-    &:after, &:before {
+
+    &:after,
+    &:before {
       background-color: $palette-common-white;
     }
-    &.hamburger-inner, &:after, &:before {
+
+    &.hamburger-inner,
+    &:after,
+    &:before {
       background-color: $palette-common-white;
     }
   }
+
   &.is-active {
     .bar {
       @include palette-background-text-secondary;
-      &:after, &:before {
+
+      &:after,
+      &:before {
         @include palette-background-text-secondary;
       }
-      &.hamburger-inner, &:after, &:before {
+
+      &.hamburger-inner,
+      &:after,
+      &:before {
         @include palette-background-text-secondary;
       }
     }
@@ -403,9 +468,11 @@ paper-nav {
   @include palette-background-paper;
   z-index: 90;
   min-width: 300px;
+
   @include breakpoints-down(xs) {
     width: 100% !important
   }
+
   .menu {
     padding: spacing(0, 2);
     overflow: auto;
@@ -413,6 +480,7 @@ paper-nav {
     width: 100%;
     position: absolute;
     height: calc(100% - 80px);
+
     .menu-list {
       text-transform: capitalize;
       font-size: 24px;
@@ -421,6 +489,7 @@ paper-nav {
       font-weight: $font-regular;
       padding: spacing(1, 0);
     }
+
     &.menu-open {
       a {
         animation-name: slideRight;

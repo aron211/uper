@@ -96,6 +96,11 @@
             </v-form>
           </v-card>
         </v-col>
+        <!-- <v-col  cols="12">
+          <div v-for="(item, index) in clinicData" :key="index">
+            <AddressCard :address="item.address" :email="item.email" :phone="item.phone"  />
+          </div>
+        </v-col> -->
       </v-row>
     </div>
   </v-container>
@@ -107,6 +112,9 @@
 
 <script>
 import logo from '~/static/images/medical-logo.svg'
+import tlfFW from '~/static/images/urpe/tlfFW.png'
+import emailFW from '~/static/images/urpe/emailFW.png'
+import ubicacionFW from '~/static/images/urpe/ubicacionFW.png'
 import brand from '~/static/text/brand'
 import Contact from '~/components/Forms/Contact'
 import AddressCard from '../Cards/Address'
@@ -120,6 +128,9 @@ export default {
   },
   data: () => ({
     logo: logo,
+    tlfFW: tlfFW,
+    emailFW: emailFW,
+    ubicacionFW: ubicacionFW,
     brand: brand,
     lang: 'en',
     clinicData: [

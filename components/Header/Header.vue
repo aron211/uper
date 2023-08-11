@@ -52,56 +52,12 @@
                 </a>
               </scrollactive>
             </div>
-            <!-- <div class="btnIconMenu">
-              <v-btn
-                v-if="isMobile"
-                :class="{ 'is-active': openDrawer }"
-                class="hamburger hamburger--spin mobile-menu"
-                plain
-                @click.stop="handleToggleOpen"
-              >
-                <span class="hamburger-box">
-                  <span class="bar hamburger-inner" />
-                </span>
-                <v-img class="iconMenu" :src="iconMenu" alt="Icono del menú" />
-              </v-btn>
-            </div> -->
+
           </nav>
           <nav
             :class="{ invert: invert }"
             class="nav-menu"
           >
-
-            <!-- <div v-if="isDesktop">
-              <scrollactive
-                v-if="loaded"
-                :offset="navOffset"
-                active-class="active"
-                tag="ul"
-              >
-                <li
-                  v-for="(item, index) in menuList"
-                  :key="index"
-                >
-                  <v-btn
-                    v-if="!invert"
-                    :href="item.url"
-                    class="anchor-link scrollactive-item"
-                    text
-                    @click="setOffset(item.offset)"
-                  >
-                    {{ $t('medicalLanding.header_'+item.name) }}
-                  </v-btn>
-                  <v-btn
-                    v-if="invert"
-                    :href="'/' + item.url"
-                    text
-                  >
-                    {{ $t('medicalLanding.header_'+item.name) }}
-                  </v-btn>
-                </li>
-              </scrollactive>
-            </div> -->
 
             <!-- <setting-menu :invert="invert" /> -->
             <v-btn
@@ -126,6 +82,8 @@
 
 <script>
 import logo from '~/static/images/urpe/logo.png'
+import logoScrollD from '~/static/images/urpe/logoScrollD.png'
+import iconMenulogo from '~/static/images/urpe/Menu.png'
 import iconMenu from '~/static/images/urpe/Menu.png'
 import link from '~/static/text/link'
 import brand from '~/static/text/brand'
@@ -159,6 +117,8 @@ export default {
     return {
       logo: logo,
       iconMenu: iconMenu,
+      iconMenulogo: iconMenulogo,
+      logoScrollD: logoScrollD,
       link: link,
       loaded: false,
       brand: brand,
@@ -180,9 +140,15 @@ export default {
   methods: {
     handleScroll: function() {
       if (window.scrollY > 80) {
-        return (this.fixed = true)
+        // return (this.fixed = true)
+        this.fixed = true
+        this.logo = logoScrollD;
       }
-      return (this.fixed = false)
+      else {
+        this.fixed = false;
+        this.logo = logo;
+      }
+      // return (this.fixed = false)
     },
     setOffset: function(offset) {
       this.navOffset = offset
