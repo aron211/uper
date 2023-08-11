@@ -2,22 +2,22 @@
   {
     "name": "blank-page___en",
     "path": "/blank-page",
-    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\uper\\\\pages\\\\blank-page.vue",
+    "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\blank-page.vue",
     "chunkName": "pages/blank-page",
-    "_name": "_29f399d8"
+    "_name": "_db22f952"
   },
   {
     "name": "contact___en",
     "path": "/contact",
-    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\uper\\\\pages\\\\contact.vue",
+    "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_27599bb8"
+    "_name": "_2fb0fe7e"
   },
   {
     "name": "index___en",
     "path": "/",
-    "component": "C:\\\\Users\\\\Admin\\\\Desktop\\\\uper\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\yosue\\\\Projects\\\\SF01\\\\medical-theme\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_247d78d6"
+    "_name": "_535ecab3"
   }
 ]

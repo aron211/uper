@@ -1,6 +1,6 @@
 const brand = {
   medical: {
-    name: 'urpe integral services',
+    name: 'URPE',
     desc: 'urpe - Vue Single Landing Page Template',
     prefix: 'urpe',
     footerText: 'URPE - All Rights Reserved 2021',

@@ -7,7 +7,7 @@
 .img2{
   display: none;
  }
- margin-top: 15em; // margen top en web
+ margin-top: 5em; // margen top en web
   }
  
   @include breakpoints-down(sm){
@@ -92,7 +92,7 @@
   .img1 {
    
     height: 90vh;
-    width: 50vw;
+    width: 45vw;
     top: 0;
     right: 0;
     // opacity: 60%;
@@ -145,7 +145,7 @@
   }
   @media screen and (min-width: 1904px) {
     /* Tu estilo para esta resolución aquí */
-    width: 30vw;
+    width: 60vw;
     height: 80vh;
   }
 }
@@ -159,12 +159,16 @@
     margin-top: 0; 
     width: 50vw;
     height: 80vh;
-    
     text-align: left;
     padding: 5em;
   
   } 
- 
+  @media screen and (min-width: 1904px) {
+    /* Tu estilo para esta resolución aquí */
+    margin-left: 5vw;
+    width: 40vw;
+    // height: 80vh;
+  }
 }
 
 h4 {

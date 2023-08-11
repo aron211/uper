@@ -20,7 +20,7 @@ export const options = {
   sortRoutes: true,
   strategy: "prefix_except_default",
   lazy: true,
-  langDir: "C:\\Users\\Admin\\Desktop\\uper\\static\\lang",
+  langDir: "C:\\Users\\yosue\\Projects\\SF01\\medical-theme\\static\\lang",
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":true,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","redirectOn":"root","useCookie":true},
   differentDomains: false,
