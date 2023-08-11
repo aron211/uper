@@ -1,12 +1,13 @@
 .root {
+  margin-top: 10em; //margen en movil
   background-image: url('../../static/images/urpe/somos.jpg');
   object-fit: cover;
-  @include
-   breakpoints-up(md){
-background-image: none;
-// .img2{
-//   display: none;
-// }
+  @include  breakpoints-up(md){
+  background-image: none;
+.img2{
+  display: none;
+ }
+ margin-top: 15em; // margen top en web
   }
  
   @include breakpoints-down(sm){
@@ -45,6 +46,11 @@ background-image: none;
 
 
   
+}
+
+.contweb{
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -86,13 +92,13 @@ background-image: none;
   .img1 {
    
     height: 90vh;
-    width: 40vw;
+    width: 50vw;
     top: 0;
     right: 0;
     // opacity: 60%;
     z-index: 0;
     position: absolute;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 50px 0 0 0 !important; /* Redondear la esquina superior izquierda */
 
   
@@ -132,7 +138,7 @@ background-image: none;
   border-radius: 15px 0 0 15px !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   z-index: 1; /* Asegura que la tarjeta esté por encima de la imagen */
-  width: 43vw;
+  width: 55vw;
   height: 80vh;
   @include breakpoints-up(md) {
     margin-top: 0; /* Ajustar margen superior para la versión más grande */
@@ -147,11 +153,18 @@ background-image: none;
 }
 
 .cardtext{
-  width: 90%;
+  width: auto;
+  height: auto;
   @include breakpoints-up(lg) {
     margin-top: 0; 
-    width: 90%;
-  }
+    width: 50vw;
+    height: 80vh;
+    
+    text-align: left;
+    padding: 5em;
+  
+  } 
+ 
 }
 
 h4 {
@@ -161,6 +174,10 @@ h4 {
   }
 }
 .title{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Poppins',sans-serif !important;
+  font-size: calc(1.2em + 1.3vw) !important;
   .titletext{
     margin-left: 2vw;
     font-weight: 600;
@@ -176,14 +193,6 @@ h4 {
     // text-align: center !important;
     // background-color: yellow;
     width: 100%;
-
-
-    .titletext{
-      margin-left: 2vw;
-      font-weight: 600;
-      font-family: 'Poppins',sans-serif !important;
-      font-size: calc(1.2em + 1.3vw);
-    }
 }
 }
 .quienessomosweb{
@@ -224,9 +233,16 @@ color: #252B42;
     // line-height: 1;
     // margin-top: 53vh;
 }
+@include breakpoints-down(lg) {
+
+}
 }
 .curved-right {
   position:relative;
+  @include breakpoints-down('sm'){
+    margin-top: 50vh;
+    margin-right: 2em;
+  }
   margin-top: 20vh;
   top: 0;
   left: 0;

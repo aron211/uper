@@ -1,7 +1,8 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="root">
     
-    <v-container fluid  class="fixed-width contweb">
+    <!-- <v-container   class=" contweb"> -->
       
       <v-row class="row-cont">
        
@@ -35,7 +36,7 @@
               </p>
             </v-card-text>
           </v-card>
-          <img src='../../static/images/urpe/somos.jpg' alt="" class="img1">
+          <img :src='web' alt="" class="img1">
             </div>
           
            
@@ -43,7 +44,7 @@
           </div>
         </v-col>
       </v-row>
-    </v-container>
+    <!-- </v-container> -->
   </div>
 </template>
 
@@ -57,6 +58,7 @@ import imgAPI from '~/static/images/imgAPI'
 
 //import TitleDeco from '../Title/WithDecoration'
 import somos from '../../static/images/urpe/somos.jpg'
+import web from '../../static/images/urpe/web.jpg'
 import integral from '../../static/images/urpe/integral2.png'
 
 export default {
@@ -64,7 +66,8 @@ export default {
     return {
       photo: imgAPI.medical[1],
       somos,
-      integral
+      integral,
+      web
     }
   },
   components: {
